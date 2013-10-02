@@ -1,0 +1,429 @@
+{
+    "metaData": {
+        "imageWidth": 800,
+        "imageHeight": 600
+    },
+    "data": [
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s1-o0",
+                    "img": "img/e734e676-dd9d-44ff-b6e0-8328fffb7a7e.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.18875,
+                    "finalOrd": 0.4683333333333333,
+                    "duration": 500
+                },
+                {
+                    "type": "appear",
+                    "target": "s1-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s2-o0",
+                    "img": "img/35db6e4c-53f4-4468-a05f-717743c3dc04.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s2-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s3-o0",
+                    "img": "img/8dbcda04-4c8e-454c-8059-735d029102a0.png"
+                },
+                {
+ 		   "type": "tooltip",
+		   "id": "s3-tip1",
+		   "text": "Le texte qu'on a entré est dans la mémoire de l'ordinateur, mais pas sur le disque (la petite étoile derrière le nom du fichier en haut de l'éditeur montre que le fichier n'est pas enregistré). On peut enregistrer le fichier avec ce bouton.",
+		   "color": "#FFFFDD",
+		   "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.1325,
+                    "finalOrd": 0.155,
+                    "duration": 500
+                },
+                {
+                    "type": "appear",
+                    "target": "s3-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                },
+                {
+                    "type": "appear",
+                    "target": "s3-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.15,
+                    "ord": 0.21
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s4-o0",
+                    "img": "img/16afc8ca-1529-4821-a6ba-1126b1b098f8.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s4-o0",
+                    "trigger": "onClick",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s5-o0",
+                    "img": "img/f423d636-4e15-44ce-ac21-305d54f64cd5.png"
+                },
+                {
+ 		   "type": "tooltip",
+		   "id": "s5-tip1",
+		   "text": "Ce bouton enregistre le programme, puis l'exécute dans l'interpréteur.",
+		   "color": "#FFFFDD",
+		   "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.235,
+                    "finalOrd": 0.14666666666666667,
+                    "duration": 500
+                },
+                {
+                    "type": "appear",
+                    "target": "s5-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                },
+		{
+                    "type": "appear",
+                    "target": "s5-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.15,
+                    "ord": 0.21,
+                    "speed": 0.8
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s6-o0",
+                    "img": "img/ed41dcad-70e4-4b31-abb7-c2ec1319d1a9.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.235,
+                    "finalOrd": 0.14666666666666667,
+                    "duration": 500
+                },
+                {
+                    "type": "appear",
+                    "target": "s6-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s7-o0",
+                    "img": "img/90f27653-aa32-4fe4-ad97-69e81893f158.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.69375,
+                    "finalOrd": 0.8183333333333334,
+                    "duration": 500
+                },
+                {
+                    "type": "appear",
+                    "target": "s7-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s8-o0",
+                    "img": "img/e4d38f1b-9360-46c4-803c-3e04213e5e62.png"
+                },
+                {
+ 		   "type": "tooltip",
+		   "id": "s8-tip1",
+		   "text": "Le programme a bien été exécuté. Le résultat est visible dans la fenêtre de l'interpréteur.",
+		   "color": "#FFFFDD",
+		   "width": "400px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s8-o0",
+                    "trigger": "onClick",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                },
+                {
+                    "type": "appear",
+                    "target": "s8-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.4,
+                    "ord": 0.72,
+                    "speed": 0.8
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s9-o0",
+                    "img": "img/1627339c-70e4-46ae-823c-8280aebd684c.png"
+                },
+                {
+ 		   "type": "tooltip",
+		   "id": "s9-tip1",
+		   "text": "On peut bien sûr entrer des programmes plus longs, sur plusieurs lignes. Contrairement au code entré directement dans l'interpréteur, rien n'est exécuté tant qu'on n'a pas cliqué sur « Exécuter le fichier ».",
+		   "color": "#FFFFDD",
+		   "width": "400px"
+               },
+               {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.17,
+                    "finalOrd": 0.5633333333333334,
+                    "duration": 500
+                },
+                {
+                    "type": "appear",
+                    "target": "s9-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                },
+                {
+                    "type": "appear",
+                    "target": "s9-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.3,
+                    "ord": 0.4,
+                    "speed": 0.8
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s10-o0",
+                    "img": "img/65c7a710-46a8-4a3f-979f-47cd933fa633.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.23625,
+                    "finalOrd": 0.14333333333333334,
+                    "duration": 500
+                },
+                {
+                    "type": "appear",
+                    "target": "s10-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s11-o0",
+                    "img": "img/57af7d64-5d12-4020-9663-6c38b45026c1.png"
+                },
+                {
+ 		   "type": "tooltip",
+		   "id": "s11-tip1",
+		   "text": "Spyder se souvient des paramètre entrés lors de la première exécution, et ne pose plus de questions.",
+		   "color": "#FFFFDD",
+		   "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s11-o0",
+                    "trigger": "onClick",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                },
+                {
+                    "type": "appear",
+                    "target": "s11-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.2,
+                    "ord": 0.2,
+                    "speed": 0.8
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s12-o0",
+                    "img": "img/26e67c6e-a9a0-46a7-b504-7e960ed62554.png"
+                },
+                {
+ 		   "type": "tooltip",
+		   "id": "s12-tip1",
+		   "text": "Fin de la présentation.<br /><a href=\"..\">Revenir au sommaire</a>",
+		   "color": "#FFDDDD",
+		   "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s12-o0",
+                    "trigger": "onClick",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0
+                },
+                {
+                    "type": "appear",
+                    "target": "s12-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.4,
+                    "ord": 0.45,
+                    "speed": 0.8
+                }
+            ]
+        }
+    ]
+}

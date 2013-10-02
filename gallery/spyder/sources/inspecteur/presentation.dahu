@@ -1,0 +1,330 @@
+{
+    "metaData": {
+        "imageWidth": 800,
+        "imageHeight": 600,
+        "nextUniqueId": 18
+    },
+    "data": [
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s1-o0",
+                    "img": "img/3e1d05f5-8554-4a66-8c43-c617e6a2835d.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.58625,
+                    "finalOrd": 0.77,
+                    "duration": 500,
+                    "id": "0"
+                },
+                {
+                    "type": "appear",
+                    "target": "s1-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s2-o0",
+                    "img": "img/a1e2bb09-567a-4892-8499-2fae0def169a.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.58625,
+                    "finalOrd": 0.77,
+                    "duration": 500,
+                    "id": "2"
+                },
+                {
+                    "type": "appear",
+                    "target": "s2-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s3-o0",
+                    "img": "img/43e41598-4db6-40ff-b678-3a3f4bc95cc8.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.68125,
+                    "finalOrd": 0.5133333333333333,
+                    "duration": 500,
+                    "id": "4"
+                },
+                {
+                    "type": "appear",
+                    "target": "s3-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "tooltip",
+                    "id": "s4-tip1",
+                    "text": "La liste des variables et leur valeur s'affiche.",
+                    "color": "#FFFFDD",
+                    "width": "150px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s4-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.8,
+                    "ord": 0.26666666666666666,
+                    "duration": 400,
+                    "id": "6"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s5-o0",
+                    "img": "img/0578dee9-dd79-4907-b138-3858a40231b7.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.55,
+                    "finalOrd": 0.8516666666666667,
+                    "duration": 500,
+                    "id": "7"
+                },
+                {
+                    "type": "appear",
+                    "target": "s5-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "8"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s6-o0",
+                    "img": "img/d1573e7b-8088-4ab2-b54c-75a6962fed68.png"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s6-tip1",
+                    "text": "Entrer un point après le nom d'une variable affiche la liste des actions disponibles sur cette variable.",
+                    "color": "#FFFFDD",
+                    "width": "300px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s6-o0",
+                    "trigger": "onClick",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "9"
+                },
+                {
+                    "type": "appear",
+                    "target": "s6-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.6,
+                    "ord": 0.8,
+                    "speed": 0.8,
+                    "id": "10"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s7-o0",
+                    "img": "img/01197d4a-95ad-429d-a0e8-d77082e92270.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.55,
+                    "finalOrd": 0.8516666666666667,
+                    "duration": 0,
+                    "id": "11"
+                },
+                {
+                    "type": "appear",
+                    "target": "s7-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "12"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s8-o0",
+                    "img": "img/76cb1622-2603-403a-916a-61c8b8b0d09e.png"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s8-tip1",
+                    "text": "Lorsqu'on commence à entrer le nom d'une action sur une variable (parenthèses ouvrante), l'inspecteur affiche la documentation correspondante.",
+                    "color": "#FFFFDD",
+                    "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s8-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "13"
+                },
+                {
+                    "type": "appear",
+                    "target": "s8-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.65,
+                    "ord": 0.28,
+                    "speed": 0.8,
+                    "id": "14"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s9-o0",
+                    "img": "img/776db0af-b618-47e4-9a86-a21026ec7f73.png"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s12-tip1",
+                    "text": "Fin de la présentation.<br /><a href=\"..\">Revenir au sommaire</a>",
+                    "color": "#FFDDDD",
+                    "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.55,
+                    "finalOrd": 0.8516666666666667,
+                    "duration": 0,
+                    "id": "15"
+                },
+                {
+                    "type": "appear",
+                    "target": "s9-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "delayAfter": 500,
+                    "id": "16"
+                },
+                {
+                    "type": "appear",
+                    "target": "s12-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.4,
+                    "ord": 0.45,
+                    "speed": 0.8,
+                    "id": "17"
+                }
+            ]
+        }
+    ]
+}

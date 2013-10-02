@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js">
+</script>
+
+<link rel="stylesheet" href="dahuapp.viewer.css">
+</head>
+
+<body>
+
+<section id="my-dahu-presentation">
+
+<div id="loading">Loading presentation...
+</div>
+
+<div class="object-list" style="display: none">
+<img src="img/f19604e3-4f6f-4056-9a17-26d895885dd6.png" alt="img/f19604e3-4f6f-4056-9a17-26d895885dd6.png" class="background s1-o0">
+<img src="img/83604734-01f3-4514-bdab-ca8c2fc8e38b.png" alt="img/83604734-01f3-4514-bdab-ca8c2fc8e38b.png" class="background s2-o0">
+<img src="img/9ae34d9e-ac98-46aa-aa73-f6e6277417a8.png" alt="img/9ae34d9e-ac98-46aa-aa73-f6e6277417a8.png" class="background s3-o0">
+<img src="img/87b1b49d-f440-4e8c-906f-677f4801df2a.png" alt="img/87b1b49d-f440-4e8c-906f-677f4801df2a.png" class="background s4-o0">
+<img src="img/d48612d8-0a67-41c5-a033-d87198df24f1.png" alt="img/d48612d8-0a67-41c5-a033-d87198df24f1.png" class="background s5-o0">
+<img src="img/9d843db9-c068-48f2-9353-d4925172f0b7.png" alt="img/9d843db9-c068-48f2-9353-d4925172f0b7.png" class="background s6-o0">
+
+<div class="tooltip s5-tip3" style="background-color: rgb(255, 255, 221); width: 200px; ">Ceci est la fenêtre de l'interpréteur Python. On peut entrer du code Python, il est évalué au fur et à mesure.
+<br>
+<button class="next">Continuer
+</button>
+</div>
+
+<div class="tooltip s5-tip2" style="background-color: rgb(255, 255, 221); width: 250px; ">Ceci est l'inspecteur d'objet. Cette fenêtre permet d'afficher rapidement des informations et de la documentation sur les variables.
+<br>(<a href="../inspecteur/">voir la présentation sur l'inspecteur</a>)
+</div>
+
+<div class="tooltip s5-tip1" style="background-color: rgb(255, 255, 221); width: 200px; ">Voici l'éditeur de texte. On pourra y entrer des programmes, et les sauvegarder dans des fichiers.
+<br>(<a href="../editeur/">voir la présentation sur l'éditeur</a>)
+</div>
+<img src="img/6026e132-583b-4460-ae2f-5c5f43499ce2.png" alt="img/6026e132-583b-4460-ae2f-5c5f43499ce2.png" class="background s7-o0">
+<img src="img/73a34299-a9d9-4b7d-8f6d-3f5246945080.png" alt="img/73a34299-a9d9-4b7d-8f6d-3f5246945080.png" class="background s8-o0">
+<img src="img/78820b0c-3da7-4d62-bb78-d4fee9e2df18.png" alt="img/78820b0c-3da7-4d62-bb78-d4fee9e2df18.png" class="background s9-o0">
+<img src="img/5a7405f7-1147-4fed-987c-309089ea0e72.png" alt="img/5a7405f7-1147-4fed-987c-309089ea0e72.png" class="background s10-o0">
+<img src="img/7033703a-062d-4913-836f-2866a82a8cfa.png" alt="img/7033703a-062d-4913-836f-2866a82a8cfa.png" class="background s11-o0">
+<img src="img/48b5e548-5fa7-4ce0-97c6-576c49623085.png" alt="img/48b5e548-5fa7-4ce0-97c6-576c49623085.png" class="background s12-o0">
+<img src="img/121a1323-2e09-43f4-aeef-fe4565b158f4.png" alt="img/121a1323-2e09-43f4-aeef-fe4565b158f4.png" class="background s13-o0">
+
+<div class="tooltip s12-tip1" style="background-color: rgb(255, 221, 221); width: 240px; ">Fin de la présentation.
+<br><a href="..">Revenir au sommaire</a>
+</div>
+<img src="img/cursor.png" alt="img/cursor.png" class="mouse-cursor">
+</div>
+
+<div class="control" style="top: 616px; ">
+<button class="previous">Previous
+</button>
+<button class="next">Next
+</button>
+</div>
+</section>
+<script src="dahuapp.js">
+</script>
+<script src="dahuapp.viewer.js">
+</script>
+<script>(function($) {
+    myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
+    myPresentation.load("presentation.json");
+    myPresentation.start();
+})(jQuery);
+
+</script>
+</body>
+</html>

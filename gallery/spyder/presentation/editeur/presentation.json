@@ -1,0 +1,218 @@
+{
+    "metaData": {
+        "imageWidth": 800,
+        "imageHeight": 600,
+        "initialBackgroundId": "s1-o0",
+        "initialMouseX": 0.18875,
+        "initialMouseY": 0.4683333333333333
+    },
+    "action": [
+        {
+            "type": "appear",
+            "target": "s2-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "2"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.1325,
+            "finalOrd": 0.155,
+            "duration": 500,
+            "id": "3"
+        },
+        {
+            "type": "appear",
+            "target": "s3-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "4"
+        },
+        {
+            "type": "appear",
+            "target": "s3-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.15,
+            "ord": 0.21,
+            "speed": 0.8,
+            "id": "5"
+        },
+        {
+            "type": "appear",
+            "target": "s4-o0",
+            "trigger": "onClick",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "6"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.235,
+            "finalOrd": 0.14666666666666667,
+            "duration": 500,
+            "id": "7"
+        },
+        {
+            "type": "appear",
+            "target": "s5-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "8"
+        },
+        {
+            "type": "appear",
+            "target": "s5-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.15,
+            "ord": 0.21,
+            "speed": 0.8,
+            "id": "9"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.235,
+            "finalOrd": 0.14666666666666667,
+            "duration": 500,
+            "id": "10"
+        },
+        {
+            "type": "appear",
+            "target": "s6-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "11"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.69375,
+            "finalOrd": 0.8183333333333334,
+            "duration": 500,
+            "id": "12"
+        },
+        {
+            "type": "appear",
+            "target": "s7-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "13"
+        },
+        {
+            "type": "appear",
+            "target": "s8-o0",
+            "trigger": "onClick",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "14"
+        },
+        {
+            "type": "appear",
+            "target": "s8-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.4,
+            "ord": 0.72,
+            "speed": 0.8,
+            "id": "15"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.17,
+            "finalOrd": 0.5633333333333334,
+            "duration": 500,
+            "id": "16"
+        },
+        {
+            "type": "appear",
+            "target": "s9-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "17"
+        },
+        {
+            "type": "appear",
+            "target": "s9-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.3,
+            "ord": 0.4,
+            "speed": 0.8,
+            "id": "18"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.23625,
+            "finalOrd": 0.14333333333333334,
+            "duration": 500,
+            "id": "19"
+        },
+        {
+            "type": "appear",
+            "target": "s10-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "20"
+        },
+        {
+            "type": "appear",
+            "target": "s11-o0",
+            "trigger": "onClick",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "21"
+        },
+        {
+            "type": "appear",
+            "target": "s11-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.2,
+            "ord": 0.2,
+            "speed": 0.8,
+            "id": "22"
+        },
+        {
+            "type": "appear",
+            "target": "s12-o0",
+            "trigger": "onClick",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "23"
+        },
+        {
+            "type": "appear",
+            "target": "s12-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.4,
+            "ord": 0.45,
+            "speed": 0.8,
+            "id": "24"
+        }
+    ]
+}

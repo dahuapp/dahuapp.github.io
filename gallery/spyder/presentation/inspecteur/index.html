@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js">
+</script>
+
+<link rel="stylesheet" href="dahuapp.viewer.css">
+</head>
+
+<body>
+
+<section id="my-dahu-presentation">
+
+<div id="loading">Loading presentation...
+</div>
+
+<div class="object-list" style="display: none">
+<img src="img/3e1d05f5-8554-4a66-8c43-c617e6a2835d.png" alt="img/3e1d05f5-8554-4a66-8c43-c617e6a2835d.png" class="background s1-o0">
+<img src="img/a1e2bb09-567a-4892-8499-2fae0def169a.png" alt="img/a1e2bb09-567a-4892-8499-2fae0def169a.png" class="background s2-o0">
+<img src="img/43e41598-4db6-40ff-b678-3a3f4bc95cc8.png" alt="img/43e41598-4db6-40ff-b678-3a3f4bc95cc8.png" class="background s3-o0">
+
+<div class="tooltip s4-tip1" style="background-color: rgb(255, 255, 221); width: 150px; ">La liste des variables et leur valeur s'affiche.
+</div>
+<img src="img/0578dee9-dd79-4907-b138-3858a40231b7.png" alt="img/0578dee9-dd79-4907-b138-3858a40231b7.png" class="background s5-o0">
+<img src="img/d1573e7b-8088-4ab2-b54c-75a6962fed68.png" alt="img/d1573e7b-8088-4ab2-b54c-75a6962fed68.png" class="background s6-o0">
+
+<div class="tooltip s6-tip1" style="background-color: rgb(255, 255, 221); width: 300px; ">Entrer un point après le nom d'une variable affiche la liste des actions disponibles sur cette variable.
+</div>
+<img src="img/01197d4a-95ad-429d-a0e8-d77082e92270.png" alt="img/01197d4a-95ad-429d-a0e8-d77082e92270.png" class="background s7-o0">
+<img src="img/76cb1622-2603-403a-916a-61c8b8b0d09e.png" alt="img/76cb1622-2603-403a-916a-61c8b8b0d09e.png" class="background s8-o0">
+
+<div class="tooltip s8-tip1" style="background-color: rgb(255, 255, 221); width: 240px; ">Lorsqu'on commence à entrer le nom d'une action sur une variable (parenthèses ouvrante), l'inspecteur affiche la documentation correspondante.
+</div>
+<img src="img/776db0af-b618-47e4-9a86-a21026ec7f73.png" alt="img/776db0af-b618-47e4-9a86-a21026ec7f73.png" class="background s9-o0">
+
+<div class="tooltip s12-tip1" style="background-color: rgb(255, 221, 221); width: 240px; ">Fin de la présentation.
+<br><a href="..">Revenir au sommaire</a>
+</div>
+<img src="img/cursor.png" alt="img/cursor.png" class="mouse-cursor">
+</div>
+
+<div class="control" style="top: 616px; ">
+<button class="previous">Previous
+</button>
+<button class="next">Next
+</button>
+</div>
+</section>
+<script src="dahuapp.js">
+</script>
+<script src="dahuapp.viewer.js">
+</script>
+<script>(function($) {
+    myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
+    myPresentation.load("presentation.json");
+    myPresentation.start();
+})(jQuery);
+
+</script>
+</body>
+</html>
