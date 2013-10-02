@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dahuapp.github.io by dahuapp</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Dahuapp.github.io</h1>
+        <p>Web page for the Dahu application</p>
+        <p class="view"><a href="https://github.com/dahuapp">View the Project on GitHub <small>dahuapp</small></a></p>
+        <ul>
+          <li class="single"><a href="">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>Summary</h2>
+
+<p>Dahu is an alternative to existing screencasting software. It allows combining a set of screenshots into an interactive presentation.</p>
+
+<p>You may view a presentation of the Dahu project by cloning the Dahu.git repository
+and opening the dahuproject.html file in the presentation/ sub-repository.</p>
+
+<h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>The <a href="https://github.com/dahuapp/Dahu/wiki/User-manual">user-manual</a> is available on <a href="https://github.com/dahuapp/Dahu/wiki/_pages">Dahu's wiki</a>.</p>
+
+<h2>
+<a name="project-goals" class="anchor" href="#project-goals"><span class="octicon octicon-link"></span></a>Project Goals</h2>
+
+<p>Even if there is a wide variety of software that offers to make screencasts, none of these programs do offer effective solutions combining the features / properties that we could expect of this kind of tool. </p>
+
+<p>Generally the approach is to make a video recording of an area of ​​your screen and to couple the audio. This approach sets several problems for the capture (an error in your manipulation or speech implies restarting everything or do some video collage), post-editing (adding text, animations, and other, means video editing), export (the formats are owner, and often too heavy), indexing (very difficult to index a video or a Flash file), reading (not practical to have to move the cursor to find the piece of information we are looking for: the time or this or that thing is explained), aso..</p>
+
+<p>An interesting approach is to use animations simpler as videos  (succession of fixed screens with a few additions such as moving the mouse capture, tooltips, ...), which can render close to the video, but simplifying and improving the capture and visualization. Solutions like <a href="http://www.debugmode.com/wink/">wink</a>, <a href="http://www.adobe.com/uk/products/captivate.html">Adobe Captivate</a>, <a href="http://sourceforge.net/projects/salasaga/">salasaga</a>, also offer interesting features in this direction but does not include the following criteria:</p>
+
+<ul>
+<li>Open source : no effective solution is available as free software,</li>
+<li>Multi platform: no free solution is effective and free multi-platform,</li>
+<li>Open standard: no effective solution uses open standards for export, import and visualization of screencasts. The formats used are often Flash or video formats.</li>
+<li>Multi export: no effective solution offers to use an intermediate format to handle screencasts, for example, offer several export / playback format of these screencasts.</li>
+<li>Indexable: Because of export formats selected by existing solutions, it is impossible to index the screencasts generated(useful for search engines but also to improve the presentation of these screencasts).</li>
+<li>Ergonomic: existing solutions are often not very ergonomic whether for recording screencasts or for reading, for instance, it is necessary to use the scroll bar of the Flash player or video to search / access a particular portion of the screencast.</li>
+<li>Web friendly: despite the fact that screencasts are designed for e-learning, none of the solutions are properly integrated with web technologies (HTML5, CSS, JS).</li>
+</ul><p>The developed solution will consist in three parts:</p>
+
+<ul>
+<li>Capture: a tool for capturing and editing, written in JavaFX and Java. It will allow : a) the recording of information linked to the screencasts and b) post-editing screencasts to add meta-data (eg, texts, animations and information about screencasts.</li>
+<li>Intermediate Format: an intermediate format to store the content, form and dynamics of screencasts. This format must be defined on open standards (XML, JSON, other), be extensible, and portable.</li>
+<li>Reading: a reader to view screencasts in a web browser (HTML5, JS, CSS).</li>
+</ul>
+      </section>
+    </div>
+    <footer>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
