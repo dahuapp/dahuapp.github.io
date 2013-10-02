@@ -1,0 +1,10 @@
+    <div class="wrapper">
+      <header>
+        <h1>Dahu Screencast Software</h1>
+        <p>Web page for the Dahu application</p>
+        <p class="view"><a href="https://github.com/dahuapp/Dahu">View the Project on GitHub <small>dahuapp</small></a></p>
+        <ul>
+          <li class="single"><a href="">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
