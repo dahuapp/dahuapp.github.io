@@ -45,29 +45,108 @@
 </p>
 
 <h2>
-<a name="project-goals" class="anchor" href="#project-goals"><span class="octicon octicon-link"></span></a>Project Goals</h2>
+<a name="project-goals" class="anchor" href="#project-goals"><span class="octicon octicon-link"></span></a>Dahu's principle</h2>
 
-<p>Even if there is a wide variety of software that offers to make screencasts, none of these programs do offer effective solutions combining the features / properties that we could expect of this kind of tool. </p>
-
-<p>Generally the approach is to make a video recording of an area of ​​your screen and to couple the audio. This approach sets several problems for the capture (an error in your manipulation or speech implies restarting everything or do some video collage), post-editing (adding text, animations, and other, means video editing), export (the formats are owner, and often too heavy), indexing (very difficult to index a video or a Flash file), reading (not practical to have to move the cursor to find the piece of information we are looking for: the time or this or that thing is explained), aso..</p>
-
-<p>An interesting approach is to use animations simpler as videos  (succession of fixed screens with a few additions such as moving the mouse capture, tooltips, ...), which can render close to the video, but simplifying and improving the capture and visualization. Solutions like <a href="http://www.debugmode.com/wink/">wink</a>, <a href="http://www.adobe.com/uk/products/captivate.html">Adobe Captivate</a>, <a href="http://sourceforge.net/projects/salasaga/">salasaga</a>, also offer interesting features in this direction but does not include the following criteria:</p>
+<p>Dahu is based on few ideas that distinguish it from other existing screencasting software:</p>
 
 <ul>
-<li>Open source: no effective solution is available as free software,</li>
-<li>Multi platform: no free solution is effective and free multi-platform,</li>
-<li>Open standard: no effective solution uses open standards for export, import and visualization of screencasts. The formats used are often Flash or video formats.</li>
-<li>Multi export: no effective solution offers to use an intermediate format to handle screencasts, for example, offer several export / playback format of these screencasts.</li>
-<li>Indexable: Because of export formats selected by existing solutions, it is impossible to index the screencasts generated(useful for search engines but also to improve the presentation of these screencasts).</li>
-<li>Ergonomic: existing solutions are often not very ergonomic whether for recording screencasts or for reading, for instance, it is necessary to use the scroll bar of the Flash player or video to search / access a particular portion of the screencast.</li>
-<li>Web friendly: despite the fact that screencasts are designed for e-learning, none of the solutions are properly integrated with web technologies (HTML5, CSS, JS).</li>
+  <li><strong>Take screenshots as still images, not video.</strong>
+  Videos are hard to edit and hard to navigate. Badly compressed
+  videos are hardly readable. Instead, Dahu uses a succession of still
+  images, that look like a video to the user. This approach is highly
+  inspired from <a href="http://www.debugmode.com/wink/">Wink</a>.
+  </li>
+  <li><strong>Capture mouse position.</strong> While capturing, the
+  mouse position for each step of the animation is captured. The
+  generated animations show a smooth mouse movement from the starting
+  point to the end point. Mouse positions can be edited after capture.
+  </li>
+  <li><strong>Annotate with tooltips, not voice.</strong> The
+  explanations on the presentation appear as textual tooltips. This
+  makes post-editing easy. The text is rendered as normal text in the
+  presentation webpage, hence can be copy-pasted, searched, and
+  indexed by search engines.
+  </li>
+  <li><strong>Standard web technologies.</strong> The generated
+  animation use only standard web technologies (HTML, CSS,
+  JavaScript). The can be viewed on any modern browser, without any
+  plugin (not even flash). Among other advantages, this is what allows
+  search engines to index presentation, and makes it easy to use any
+  HTML elements like links within tooltips.
+  </li>
+  <li><strong>Multi-platform.</strong> The tool itself is written in
+  Java and JavaScript. It requires a recent version of Java, but runs
+  on Windows, Linux, Mac OS, and probably other platforms as
+  well.</li>
+  <li><strong>Free and Open-Source.</strong> Dahu is available for
+  free (both free of charge and open-source).
+  </li>
 </ul>
+
+<h2>
+<a name="project-status" class="anchor" href="#project-status"><span class="octicon octicon-link"></span></a>Dahu's Development Status</h2>
+
+<p>Dahu is still in early stage of development. The presentation
+generation works well, but not all features are implemented in the
+graphical editor. To display tooltips in presentations, or use any
+advanced features, you will need to use a text editor and edit the
+<tt>presentation.dahu</tt> file (the <a
+href="https://github.com/dahuapp/Dahu/wiki/User-manual">user-manual</a>
+explains how to do this).</p>
+
+<p>In other words, creating a presentation requires some
+computer-science skills. The generated presentations are already
+user-friendly however. They require a modern web browser (Chromium,
+Firefox, IE version 9 or greater, ...).</p>
+
+<h2>
+<a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download</h2>
+
+<p>The source code can be <a
+href="https://github.com/dahuapp/Dahu">downloaded from GitHub</a>. You
+will need Java >= 1.7 and Gradle to compile it.</p>
+
+<h2>
+<a name="alternatives" class="anchor" href="#alternatives"><span class="octicon octicon-link"></span></a>Other Screencasting Software</h2>
+
+<p>Even if there is a wide variety of software that offers to make
+screencasts, none of these programs do offer effective solutions
+combining the features / properties that we could expect of this kind
+of tool. </p>
+
+<p>Generally the approach is to make a video recording of an area of
+your screen and to couple the audio. This approach sets several
+problems for the capture (an error in your manipulation or speech
+implies restarting everything or do some video collage), post-editing
+(adding text, animations, and other, means video editing), export (the
+formats are owner, and often too heavy), indexing (very difficult to
+index a video or a Flash file), reading (not practical to have to move
+the cursor to find the piece of information we are looking for: the
+time or this or that thing is explained), aso..</p>
+
+<p>A notable exception is <a
+href="http://www.debugmode.com/wink/">Wink</a>, which was a great
+source of inspiration for Dahu, but it is not open-source, runs very
+badly on Linux, and does not seem to be maintained anymore. Also, Wink
+generates Flash animations, which was a sensible choice a few years
+ago, but is no longer a good idea: browser already offer the required
+features without a plugin, and Flash is not available on all platforms
+(e.g. iPad).</p>
+
+<p>Other alternatives include <a
+href="http://www.adobe.com/uk/products/captivate.html">Adobe
+Captivate</a> (commercial, not open-source) and <a
+href="http://sourceforge.net/projects/salasaga/">salasaga</a> (does
+not seem maintained).</p>
+
+<h2>
+<a name="architecture" class="anchor" href="#architecture"><span class="octicon octicon-link"></span></a>Architecture</h2>
 
 <p>Dahu consists in three parts:</p>
 <ul>
-<li>Capture: a tool for capturing and editing, written in JavaFX and Java. It will allow : a) the recording of information linked to the screencasts and b) post-editing screencasts to add meta-data (eg, texts, animations and information about screencasts.</li>
-<li>Intermediate Format: an intermediate format to store the content, form and dynamics of screencasts. It is a simple JSon-based format, easily extensible and hand-editable if needed.</li>
-<li>Reading: a viewer to view screencasts in a web browser (HTML5, JS, CSS).</li>
+<li><strong>Capture:</strong> a tool for capturing and editing, written in JavaFX and Java. It will allow : a) the recording of information linked to the screencasts and b) post-editing screencasts to add meta-data (eg, texts, animations and information about screencasts.</li>
+<li><strong>Intermediate Format:</strong> an intermediate format to store the content, form and dynamics of screencasts. It is a simple JSon-based format, easily extensible and hand-editable if needed.</li>
+<li><strong>Reading:</strong> a viewer to view screencasts in a web browser (HTML5, JS, CSS).</li>
 </ul>
       </section>
     </div>
