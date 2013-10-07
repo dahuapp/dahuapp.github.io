@@ -71,7 +71,7 @@
                     "id": "3",
                     "type": "move",
                     "target": "mouse-cursor",
-                    "trigger": "afterPrevious",
+                    "trigger": "onClick",
                     "finalAbs": 0.30333333333333334,
                     "finalOrd": 0.145
                 },
