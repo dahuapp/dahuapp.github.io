@@ -1,0 +1,265 @@
+{
+    "metaData": {
+        "imageWidth": 800,
+        "imageHeight": 600,
+        "initialBackgroundId": "s1-o0",
+        "initialMouseX": 0.475,
+        "initialMouseY": 0.49333333333333335
+    },
+    "action": [
+        {
+            "id": "5",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.03875,
+            "finalOrd": 0.015,
+            "speed": 0.8
+        },
+        {
+            "id": "6",
+            "type": "appear",
+            "target": "s2-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "7",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.06,
+            "finalOrd": 0.12666666666666668,
+            "speed": 0.8
+        },
+        {
+            "id": "8",
+            "type": "appear",
+            "target": "s3-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "10",
+            "type": "appear",
+            "target": "s4-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "11",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.18625,
+            "finalOrd": 0.3433333333333333,
+            "speed": 0.8
+        },
+        {
+            "id": "12",
+            "type": "appear",
+            "target": "s5-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "13",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.37625,
+            "finalOrd": 0.7183333333333334,
+            "speed": 0.8
+        },
+        {
+            "id": "14",
+            "type": "appear",
+            "target": "s6-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "16",
+            "type": "appear",
+            "target": "s7-o0",
+            "trigger": "onClick",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "33",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.1025,
+            "finalOrd": 0.22666666666666666,
+            "speed": 0.8
+        },
+        {
+            "id": "34",
+            "type": "appear",
+            "target": "s16-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "36",
+            "type": "appear",
+            "target": "s17-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "37",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.19875,
+            "finalOrd": 0.615,
+            "speed": 0.8
+        },
+        {
+            "id": "38",
+            "type": "appear",
+            "target": "s18-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "39",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.19875,
+            "finalOrd": 0.615,
+            "speed": 0.8
+        },
+        {
+            "id": "40",
+            "type": "appear",
+            "target": "s19-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "type": "appear",
+            "target": "s18-tip1",
+            "trigger": "afterPrevious",
+            "delayAfter": 0,
+            "abs": 0.7,
+            "ord": 0.76,
+            "duration": 200,
+            "id": "s18-tip1"
+        },
+        {
+            "id": "41",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.1,
+            "finalOrd": 0.26,
+            "speed": 0.8
+        },
+        {
+            "id": "42",
+            "type": "appear",
+            "target": "s20-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "45",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.10875,
+            "finalOrd": 0.2966666666666667,
+            "speed": 0.8
+        },
+        {
+            "id": "44",
+            "type": "appear",
+            "target": "s21-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "46",
+            "type": "appear",
+            "target": "s22-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "47",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.2025,
+            "finalOrd": 0.6883333333333334,
+            "speed": 0.8
+        },
+        {
+            "id": "48",
+            "type": "appear",
+            "target": "s23-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "49",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.2025,
+            "finalOrd": 0.6883333333333334,
+            "speed": 0.8
+        },
+        {
+            "id": "50",
+            "type": "appear",
+            "target": "s24-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "delayAfter": 500
+        },
+        {
+            "type": "appear",
+            "target": "s12-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.4,
+            "ord": 0.45,
+            "duration": 400,
+            "id": "32"
+        }
+    ]
+}

@@ -40,7 +40,6 @@
             "trigger": "afterPrevious",
             "abs": 0.15,
             "ord": 0.21,
-            "speed": 0.8,
             "id": "5"
         },
         {

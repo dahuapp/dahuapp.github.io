@@ -3,8 +3,10 @@
 <html lang="en">
 
 <head>
+<title>Dahu Presentation
+</title>
 <meta charset="utf-8">
-<script src="http://code.jquery.com/jquery-1.9.1.min.js">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript">
 </script>
 
 <link rel="stylesheet" href="dahuapp.viewer.css">
@@ -12,12 +14,13 @@
 
 <body>
 
-<section id="my-dahu-presentation">
+<div id="my-dahu-presentation">
 
 <div id="loading">Loading presentation...
 </div>
 
 <div class="object-list" style="display: none">
+<img src="img/bb79c9d2-2d91-4597-aec5-b7a0bff54f39.png" alt="img/bb79c9d2-2d91-4597-aec5-b7a0bff54f39.png" class="background s1-o0">
 <img src="img/bb79c9d2-2d91-4597-aec5-b7a0bff54f39.png" alt="img/bb79c9d2-2d91-4597-aec5-b7a0bff54f39.png" class="background s1-o0">
 
 <div class="tooltip s1-tip1" style="background-color: rgb(255, 255, 221); width: 300px; ">Par défaut, l'éditeur de texte est ouvert sur un fichier temporaire (.temp.py). Il est déconseillé d'écrire des programmes non-triviaux dedans, il vaut mieux s'organiser et bien nommer ses fichiers.
@@ -50,13 +53,13 @@
 <button class="next">Next
 </button>
 </div>
-</section>
-<script src="dahuapp.js">
+</div>
+<script src="dahuapp.js" type="text/javascript">
 </script>
-<script src="dahuapp.viewer.js">
+<script src="dahuapp.viewer.js" type="text/javascript">
 </script>
-<script>(function($) {
-    myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
+<script type="text/javascript">(function($) {
+    var myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
     myPresentation.load("presentation.json");
     myPresentation.start();
 })(jQuery);

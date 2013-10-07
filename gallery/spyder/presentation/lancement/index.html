@@ -3,8 +3,10 @@
 <html lang="en">
 
 <head>
+<title>Dahu Presentation
+</title>
 <meta charset="utf-8">
-<script src="http://code.jquery.com/jquery-1.9.1.min.js">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript">
 </script>
 
 <link rel="stylesheet" href="dahuapp.viewer.css">
@@ -12,7 +14,7 @@
 
 <body>
 
-<section id="my-dahu-presentation">
+<div id="my-dahu-presentation">
 
 <div id="loading">Loading presentation...
 </div>
@@ -25,7 +27,7 @@
 <img src="img/d48612d8-0a67-41c5-a033-d87198df24f1.png" alt="img/d48612d8-0a67-41c5-a033-d87198df24f1.png" class="background s5-o0">
 <img src="img/9d843db9-c068-48f2-9353-d4925172f0b7.png" alt="img/9d843db9-c068-48f2-9353-d4925172f0b7.png" class="background s6-o0">
 
-<div class="tooltip s5-tip3" style="background-color: rgb(255, 255, 221); width: 200px; ">Ceci est la fenêtre de l'interpréteur Python. On peut entrer du code Python, il est évalué au fur et à mesure.
+<div class="tooltip s5-tip3" style="background-color: rgb(255, 255, 221); width: 200px; ">Ceci est la fenêtre de l'interprète Python. On peut entrer du code Python, il est évalué au fur et à mesure.
 <br>
 <button class="next">Continuer
 </button>
@@ -58,13 +60,13 @@
 <button class="next">Next
 </button>
 </div>
-</section>
-<script src="dahuapp.js">
+</div>
+<script src="dahuapp.js" type="text/javascript">
 </script>
-<script src="dahuapp.viewer.js">
+<script src="dahuapp.viewer.js" type="text/javascript">
 </script>
-<script>(function($) {
-    myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
+<script type="text/javascript">(function($) {
+    var myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
     myPresentation.load("presentation.json");
     myPresentation.start();
 })(jQuery);
