@@ -13,6 +13,11 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+<style>
+.filename {
+    font-family: monospace;
+}
+</style>
   </head>
   <body>
     <div class="wrapper">
@@ -86,11 +91,11 @@
   free (both free of charge and open-source).
   </li>
   <li><strong>Version-Control Friendly.</strong> A Dahu project
-  consists in one small text file (JSon) <tt>presentation.dahu</tt>,
+  consists in one small text file (JSon) <span class="filename">presentation.dahu</span>,
   plus one image file per screenshot, named after a UUID. As a result,
   using a version control system (like Git, Mercurial, SVN...) is
   reasonably efficient (a change to a single image or to
-  <tt>presentation.dahu</tt> does not require storing a full version
+  <span class="filename">presentation.dahu</span> does not require storing a full version
   of the whole project). With a bit of care, branching and automatic
   merging are possible.
   </li>
@@ -103,7 +108,7 @@
 generation works well, but not all features are implemented in the
 graphical editor. To display tooltips in presentations, or use any
 advanced features, you will need to use a text editor and edit the
-<tt>presentation.dahu</tt> file (the <a
+<span class="filename">presentation.dahu</span> file (the <a
 href="https://github.com/dahuapp/Dahu/wiki/User-manual">user-manual</a>
 explains how to do this).</p>
 
