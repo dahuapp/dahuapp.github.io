@@ -373,7 +373,7 @@
                 {
                     "type": "tooltip",
                     "id": "s12-tip1",
-                    "text": "End of presentation. What do you want to do now?<br /><a href=\"#\" onclick=\"top.location='http://dahuapp.github.io/gallery/';\">View more examples</a><br /><a href=\"#\" onclick=\"top.location='https://github.com/dahuapp/Dahu/wiki/User-manual';\">Read the user manual</a><br />",
+                    "text": "End of presentation. What do you want to do now?<ul><li><a href=\"https://github.com/dahuapp/dahuapp.github.io/tree/HEAD/gallery/dahu\" target=\"_top\">View the source of this presentation</a></li><li><a href=\"http://dahuapp.github.io/gallery/\" target=\"_top\">View more examples</a></li><li><a href=\"https://github.com/dahuapp/Dahu/wiki/User-manual\" target=\"_top\">Read the user manual</a></li></ul>",
                     "color": "#FFDDDD",
                     "width": "240px"
                 },
