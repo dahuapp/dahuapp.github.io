@@ -1,14 +1,95 @@
 {% extends "_base.html" %}
 {% block title %}Index{% endblock %}
 {% block content %}
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <h1>Dahu</h1>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">Hello</div>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <h1>Dahu</h1>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <iframe width="610" height="650" scrolling="no"
+                        src="statics/medias/gallery/dahu/build/index.html?autoplay=1000&amp;autostart=1000&amp;autoloop=20000"
+                        style="overflow: hidden; border: 0">
+                </iframe>
             </div>
         </div>
     </div>
+</div>
+<div class="segment">
+    <div class="container">
+        <div class="jumbotron jumbotron-banner">
+            <h1>Screencasting done right!</h1>
+
+            <p class="lead">
+                Dahu is an alternative to existing screencasting softwares.
+                Dahu is based on a few ides that simply make generating screencast more clever.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <h2>Take screenshots as still images, not video.</h2>
+
+                <p>Videos are hard to edit and hard to navigate. Badly compressed
+                    videos are hardly readable. Instead, Dahu uses a succession of still
+                    images, that look like a video to the user. This approach is highly
+                    inspired from <a href="http://www.debugmode.com/wink/">Wink</a>.</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <h2>Capture mouse position.</h2>
+
+                <p>While capturing, the
+                    mouse position for each step of the animation is captured. The
+                    generated animations show a smooth mouse movement from the starting
+                    point to the end point. Mouse positions can be edited after capture.</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-xs-12 col-md-6 col-lg-4">
+                <h2>Annotate with tooltips, not voice.</h2>
+
+                <p>The
+                    explanations on the presentation appear as textual tooltips. This
+                    makes post-editing easy. The text is rendered as normal text in the
+                    presentation webpage, hence can be copy-pasted, searched, and
+                    indexed by search engines.</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <h2>Standard web technologies. No flash, no plugin.</h2>
+
+                <p>The generated
+                    animation use only standard web technologies (HTML, CSS,
+                    JavaScript). The can be viewed on any modern browser, without any
+                    plugin (not even flash). Among other advantages, this is what allows
+                    search engines to index presentation, and makes it easy to use any
+                    HTML elements like links within tooltips.</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <h2>Multi-platform.</h2>
+
+                <p>The tool itself is written in
+                    Java and JavaScript. It requires a recent version of Java, but runs
+                    on Windows, Linux, Mac OS, and probably other platforms as
+                    well.</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <h2>Free and Open-Source.</h2>
+
+                <p>Dahu is available for
+                    free (both free of charge and open-source).
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <h2>Version-Control Friendly.</h2>
+
+                <p>A Dahu project
+                    consists in one small text file (JSon) <span class="filename">presentation.dahu</span>,
+                    plus one image file per screenshot, named after a UUID. As a result,
+                    using a version control system (like Git, Mercurial, SVN...) is
+                    reasonably efficient (a change to a single image or to
+                    <span class="filename">presentation.dahu</span> does not require storing a full version
+                    of the whole project). With a bit of care, branching and automatic
+                    merging are possible.</p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
