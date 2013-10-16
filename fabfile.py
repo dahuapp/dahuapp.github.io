@@ -17,6 +17,7 @@ RESOURCES_DIR = "resources"
 MEDIAS_DIR = "medias"
 STYLESHEETS_DIR = "stylesheets"
 SCRIPTS_DIR = "scripts"
+ASSETS_DIR = "assets"
 PROTECTED_DIRS = [MEDIAS_DIR, RESOURCES_DIR, STYLESHEETS_DIR, SCRIPTS_DIR, STYLESHEETS_CSS, SCRIPTS_JS, TEMPLATES_DIR]
 STATICS_DIR = "statics"
 
@@ -41,6 +42,7 @@ def generate():
 
     # generate medias, stylesheets, scripts
     execute(generate_medias)
+    execute(generate_assets)
     execute(generate_stylesheets)
     execute(generate_scripts)
 
@@ -69,6 +71,16 @@ def generate():
     execute(generate_resources)
 
 
+def generate_assets():
+    """Generate assets"""
+
+    execute(bower_install, force=False)
+
+    if os.path.exists(ASSETS_DIR):
+        __print_copy(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR))
+        shutil.copytree(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR))
+
+
 def generate_medias():
     """Generate medias"""
 
@@ -85,7 +97,10 @@ def generate_stylesheets():
             __print_copy(os.path.join(STYLESHEETS_DIR, STYLESHEETS_CSS), os.path.join(OUTPUT_DIR, STATICS_DIR, STYLESHEETS_CSS))
             shutil.copytree(os.path.join(STYLESHEETS_DIR, STYLESHEETS_CSS), os.path.join(OUTPUT_DIR, STATICS_DIR, STYLESHEETS_CSS))
         if os.path.exists(os.path.join(STYLESHEETS_DIR, STYLESHEETS_SCSS)):
-            local("scss --update {0}:{1}".format(os.path.join(STYLESHEETS_DIR, STYLESHEETS_SCSS), os.path.join(OUTPUT_DIR, STATICS_DIR, STYLESHEETS_CSS)))
+            local("scss --update {0}:{1} --load-path {2}".format(
+                os.path.join(STYLESHEETS_DIR, STYLESHEETS_SCSS),
+                os.path.join(OUTPUT_DIR, STATICS_DIR, STYLESHEETS_CSS),
+                ASSETS_DIR))
 
 
 
@@ -111,10 +126,10 @@ def generate_resources():
 
 
 @task()
-def bower_install():
+def bower_install(force=True):
     """Install bower dependencies."""
-
-    local("bower install --config.directory={0}/assets".format(OUTPUT_DIR))
+    if not os.path.exists(ASSETS_DIR) or force:
+        local("bower install --config.directory={}".format(ASSETS_DIR))
 
 
 @task
@@ -123,7 +138,6 @@ def publish(from_branch="devel", to_branch="devel-gh-pages"):
     local("git checkout --orphan {0}".format(to_branch))
     local("git rm --cached $(git ls-files)")
     execute(generate)
-    execute(bower_install)
     local("git clean -xdf -e {0}".format(OUTPUT_DIR))
     local("mv gen/* .")
     local("rm -r {0}".format(OUTPUT_DIR))
