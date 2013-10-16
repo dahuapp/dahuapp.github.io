@@ -16,26 +16,27 @@
     <link rel="stylesheet" href="statics/css/style.css">
 </head>
 <body>
-<header class="segment">
+<header>
     <div class="container">
-        <nav class="navbar">
-            <div class="pull-left"><a href="/" class="navbar-text">Dahu</a></div>
-            <ul class="nav nav-pills navbar-right">
-                <li><a href="about.html" class="navbar-link">about</a></li>
-                <li><a href="#screeshots" class="navbar-link">screenshots</a></li>
-                <li><a href="#download" class="navbar-link">download</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div class="jumbotron jumbotron-banner">
+            <h1><a href="/"><img src="statics/medias/images/dahu-icon-32@2x.png" />Dahu</a></h1>
+            <p class="lead">
+                A free and awesome screencasting software for Windows, Mac and Linux
+            </p>
+        </div>
+     </div>
 </header>
 {% block content %}{% endblock %}
-<div class="ui divider"></div>
-<div class="container">
-    <footer>
-        <div class="item">Dahu 2013</div>
-        <a class="item" href="https://github.com/dahuapp/Dahu.git">Github</a>
-
-    </footer>
-</div>
+<hr class="divider"/>
+<footer>
+    <div class="container divider">
+        <ul class="list-inline nav-list pull-left">
+            <li><a href="about.html" class="navbar-link">About</a></li>
+            <li><a href="#" class="navbar-link">Support</a></li>
+            <li><a href="https://github.com/dahuapp/Dahu.git" class="navbar-link">Github</a></li>
+        </ul>
+        <div class="pull-right">Dahu 2013</div>
+    </div>
+</footer>
 </body>
 </html>

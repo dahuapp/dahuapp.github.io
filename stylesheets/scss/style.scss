@@ -1,4 +1,39 @@
+@import "sass-bootstrap/lib/bootstrap";
+
+header {
+  text-align: center;
+
+  .jumbotron {
+    padding-top: $jumbotron-padding/3;
+    padding-bottom: $jumbotron-padding/3;
+  }
+
+  .lead {
+    color: inherit;
+    font-size: ceil($font-size-base * 3);
+  }
+}
+
+.jumbotron-carousel {
+  padding-top: $jumbotron-padding/4;
+   padding-bottom: $jumbotron-padding/4;
+}
+
 .jumbotron-banner {
   text-align: center;
   background-color: transparent;
+}
+
+.spacer {
+  padding-top: $jumbotron-padding;
+}
+
+.divider {
+  padding: $nav-link-padding;
+}
+
+ul.nav-list {
+  li+li {
+    border-left: 1px dashed #dadada;
+  }
 }
