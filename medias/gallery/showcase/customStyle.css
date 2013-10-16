@@ -1,0 +1,8 @@
+.tooltip {
+    padding: 10px;
+    background-color: rgb(68, 68, 68); /* Fall-back for browsers that don't support rgba */
+    background-color: rgba(68, 68, 68, .9);
+    color: #ebebeb;
+    border: 1px solid rgb(138, 138, 138);
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
