@@ -1,3 +1,11 @@
+/* ignore python generated files */
 *.pyc
+
+/* ignore IDE generated files */
+.project
 .idea
+.sass-cache
+
+/* ignore generated directories */
+assets
 gen
