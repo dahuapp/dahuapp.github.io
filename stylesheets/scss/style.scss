@@ -1,39 +1,86 @@
 @import "sass-bootstrap/lib/bootstrap";
+@import "_variables";
 
 header {
-  text-align: center;
+    text-align: center;
 
-  .jumbotron {
-    padding-top: $jumbotron-padding/3;
-    padding-bottom: $jumbotron-padding/3;
-  }
+    .jumbotron {
+        padding-top: $jumbotron-padding/3;
+        padding-bottom: $jumbotron-padding/3;
+    }
 
-  .lead {
-    color: inherit;
-    font-size: ceil($font-size-base * 3);
-  }
+    h1 a {
+        line-height: 64px;
+        font-size: 64px;
+        font-weight: 400;
+        color: $dahu-logo-color;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        img {
+            margin-top: -10px;
+            margin-right: 5px;
+        }
+    }
+
+    .lead {
+        color: inherit;
+        font-size: ceil($font-size-base * 3);
+    }
 }
 
 .jumbotron-carousel {
-  padding-top: $jumbotron-padding/4;
-   padding-bottom: $jumbotron-padding/4;
+    padding-top: $jumbotron-padding/4;
+    padding-bottom: $jumbotron-padding/4;
+    background-color: $dahu-jumbotron-carousel-color;
+    -webkit-box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .jumbotron-banner {
-  text-align: center;
-  background-color: transparent;
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron-development {
+    text-align: left;
+    background-color: $dahu-jumbotron-development-color;
+    -webkit-box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .spacer {
-  padding-top: $jumbotron-padding;
+    padding-top: $jumbotron-padding;
 }
 
 .divider {
-  padding: $nav-link-padding;
+    padding: $nav-link-padding;
 }
 
+/*
+hr.mark {
+    padding: 0;
+    border: none;
+    border-top: solid 1px lightgrey;
+    color: #333;
+    text-align: center;
+    &:after {
+        content: "$";
+        height: 64px;
+        width: 64px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        position: relative;
+        margin-top: -32px;
+        background: url(../medias/images/dahu-64-gray.png) no-repeat center;
+    }
+}*/
+
 ul.nav-list {
-  li+li {
-    border-left: 1px dashed #dadada;
-  }
+    li + li {
+        border-left: 1px dashed #dadada;
+    }
 }
