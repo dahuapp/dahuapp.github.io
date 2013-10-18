@@ -1,33 +1,28 @@
 @import "sass-bootstrap/lib/bootstrap";
 @import "_variables";
 
+body {
+    padding-top: 50px;
+}
+
+/* header */
+
 header {
-    text-align: center;
-
-    .jumbotron {
-        padding-top: $jumbotron-padding/3;
-        padding-bottom: $jumbotron-padding/3;
+    .navbar {
+        background: $dahu-page-background-color;
+        margin-bottom: 0px;
     }
 
-    h1 a {
-        line-height: 64px;
-        font-size: 64px;
-        font-weight: 400;
-        color: $dahu-logo-color;
+    .navbar-nav {
+        @extend .pull-right;
+    }
 
-        &:hover {
-            text-decoration: none;
-        }
-
+    .navbar-brand {
+        padding-top: 9px;
+        padding-bottom: 9px;
         img {
-            margin-top: -10px;
-            margin-right: 5px;
+            height: 32px;
         }
-    }
-
-    .lead {
-        color: inherit;
-        font-size: ceil($font-size-base * 3);
     }
 }
 
@@ -37,6 +32,40 @@ header {
     background-color: $dahu-jumbotron-carousel-color;
     -webkit-box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+
+
+    .carousel .item {
+        transition: none;
+        text-align: center;
+        p.title {
+            font-weight: bold;
+            font-size: ceil($font-size-base*1.5);
+        }
+        img {
+            @extend .visible-md;
+            @extend .visible-lg;
+            margin: auto;
+        }
+    }
+
+    .carousel .carousel-caption {
+        margin: 0;
+        padding-bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        .feature .item {
+            height: 100px;
+        }
+    }
+
+    @media (min-width: $screen-md) {
+        .feature .item {
+            height: 400px;
+        }
+    }
 }
 
 .jumbotron-banner {
@@ -52,32 +81,33 @@ header {
 }
 
 .spacer {
-    padding-top: $jumbotron-padding;
+    border: none;
+    padding: $nav-link-padding;
 }
 
 .divider {
     padding: $nav-link-padding;
 }
 
-/*
-hr.mark {
-    padding: 0;
-    border: none;
-    border-top: solid 1px lightgrey;
-    color: #333;
-    text-align: center;
-    &:after {
-        content: "$";
-        height: 64px;
-        width: 64px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        position: relative;
-        margin-top: -32px;
-        background: url(../medias/images/dahu-64-gray.png) no-repeat center;
+/* screenshot & galery */
+
+#gallery-preview,
+#screenshot-preview {
+    h1 small {
+        line-height: $headings-line-height;
     }
-}*/
+}
+
+/* thumbnail */
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    img { min-height:200px; height:200px; }
+    .caption {
+        @extend .text-center;
+    }
+}
 
 ul.nav-list {
     li + li {

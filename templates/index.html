@@ -3,10 +3,61 @@
 {% block content %}
 <div class="jumbotron jumbotron-carousel">
     <div class="container text-center">
-        <iframe width="800" height="500" scrolling="no"
-                src="statics/medias/gallery/showcase/build/index.html?autoplay=1000&amp;autostart=1000&amp;autoloop=20000"
-                style="overflow: hidden; border: 0" class="img-rounded">
-        </iframe>
+        <div class="row">
+            <div id="showcase" class="col-xs-12 col-md-8 col-lg-7">
+                <img src="statics/medias/gallery/showcase/showcase.png"/>
+                <!-- instead of this image it should be the screencast
+                <iframe width="600" height="400" scrolling="no"
+                        src="statics/medias/gallery/showcase/build/index.html?autoplay=1000&amp;autostart=1000&amp;autoloop=20000"
+                        style="overflow: hidden; border: 0" class="img-rounded">
+                </iframe>
+                -->
+            </div>
+            <div id="feature" class="feature col-xs-12 col-md-4 col-lg-5">
+                <div id="carousel-features" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="statics/medias/images/carousel/html-css-js.png"/>
+
+                            <div class="carousel-caption">
+                                <p class="title">Standard Web Technologies</p>
+
+                                <p>No flash but HTML5+CSS+JS</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="statics/medias/images/carousel/multi-platform.png"/>
+
+                            <div class="carousel-caption">
+                                <p class="title">Multi-Platform</p>
+
+                                <p>Run on Mac, Linux and Windows</small></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="statics/medias/images/carousel/version-control.png"/>
+
+                            <div class="carousel-caption">
+                                <p class="title">Version-Control Friendly</p>
+
+                                <p>Work nice with Git, Mercurial, Darcs, Subversion, etc.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="statics/medias/images/carousel/open-source.png"/>
+
+                            <div class="carousel-caption">
+                                <p class="title">Free and Open-Source</p>
+
+                                <p>Dahu is available for
+                                    free (both free of charge and open-source).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="container">
@@ -24,24 +75,21 @@
 
             <p>Videos are hard to edit and hard to navigate. Badly compressed
                 videos are hardly readable. Instead, Dahu uses a succession of still
-                images, that look like a video to the user. This approach is highly
-                inspired from <a href="http://www.debugmode.com/wink/">Wink</a>.</p>
+                images, that look like a video to the user.</p>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
             <h2>Capture mouse position.</h2>
 
-            <p>While capturing, the
-                mouse position for each step of the animation is captured. The
-                generated animations show a smooth mouse movement from the starting
-                point to the end point. Mouse positions can be edited after capture.</p>
+            <p>The mouse positions are captured at each step. Smooth mouse animations
+                are then generated from the starting point to the end point.
+                Mouse positions can be edited after capture.</p>
         </div>
         <div class="col-xs-12 col-md-6 col-xs-12 col-md-6 col-lg-4">
             <h2>Annotate with tooltips, not voice.</h2>
 
-            <p>The
-                explanations on the presentation appear as textual tooltips. This
+            <p>Annotations on the presentation appear as textual tooltips. This
                 makes post-editing easy. The text is rendered as normal text in the
-                presentation webpage, hence can be copy-pasted, searched, and
+                generated presentation, hence can be copy-pasted, searched, and
                 indexed by search engines.</p>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
@@ -59,14 +107,13 @@
 
             <p>The tool itself is written in
                 Java and JavaScript. It requires a recent version of Java, but runs
-                on Windows, Linux, Mac OS, and probably other platforms as
-                well.</p>
+                on Windows, Linux, Mac OS, and any Java compliant systems.</p>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
             <h2>Free and Open-Source.</h2>
 
-            <p>Dahu is available for
-                free (both free of charge and open-source).
+            <p>Dahu is available for free and is fully open-source.
+                The source code is hosted on <a href="https://github.com/dahuapp/Dahu.git">Github</a>
             </p>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
@@ -78,35 +125,78 @@
                 using a version control system (like Git, Mercurial, SVN...) is
                 reasonably efficient (a change to a single image or to
                 <span class="filename">presentation.dahu</span> does not require storing a full version
-                of the whole project). With a bit of care, branching and automatic
-                merging are possible.</p>
+                of the whole project).</p>
         </div>
     </div>
 </div>
-<hr class="divider"/>
+<hr class="spacer"/>
 <div class="container">
+    <div class="page-header">
+        <h1 class="link">
+            Gallery<small class="pull-right"><i class="verticalSeparator" /><a href="#" class="">see more</a></small>
+        </h1>
+    </div>
     <div class="row">
         <div class="col-xs-12 col-md-6">
-            <h1>Gallery</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    hello
-                </div>
-                <div class="col-md-6">
-                    hello
+            <div class="item">
+                <img src="statics/medias/images/screenshots/spyder.png" class="img-responsive"/>
+
+                <div class="caption">
+                    <h3>Spyder</h3>
+
+                    <p>A presentation on Spyder Python IDE (french)</p>
+
+                    <p>
+                        <a href="#" class="btn btn-primary">Screencast</a>
+                        <a href="#" class="btn btn-default">Source</a>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-6">
-            <h1>Screenshots</h1>
+            <div class="item">
+                <img src="statics/medias/images/screenshots/dahu.png" class="img-responsive"/>
+
+                <div class="caption">
+                    <h3>Dahu</h3>
+
+                    <p>A short presentation of Dahu, in Dahu</p>
+
+                    <p>
+                        <a href="#" class="btn btn-primary">Screencast</a>
+                        <a href="#" class="btn btn-default">Source</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
- <hr class="divider"/>
+<hr class="spacer"/>
+<div class="container">
+    <div class="page-header">
+        <h1 class="link">
+            Screenshots<small class="pull-right"><i class="verticalSeparator" /><a href="#" class="">see more</a></small>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="item">
+                <img src="statics/medias/images/screenshots/project.png" class="img-responsive"/>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="item">
+                <img src="statics/medias/images/screenshots/editing.png" class="img-responsive"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="divider"/>
 <div class="container">
     <p>Binary releases of Dahu can be found on the Dahu release page.
 
-The source code can be downloaded from GitHub. You will need Java >= 1.7 and Gradle to compile it.</p>
+        The source code can be downloaded from GitHub. You will need Java >= 1.7 and Gradle to compile it.</p>
 </div>
 
 <div class="jumbotron jumbotron-development">
@@ -114,10 +204,24 @@ The source code can be downloaded from GitHub. You will need Java >= 1.7 and Gra
         <h1>Development status</h1>
 
         <p class="lead">
-            Dahu is still in early stage of development. The presentation generation works well, but not all features are implemented in the graphical editor. To display tooltips in presentations, or use any advanced features, you will need to use a text editor and edit the presentation.dahu file (the user-manual explains how to do this).
+            Dahu is still in early stage of development. The presentation generation works well, but not all features
+            are implemented in the graphical editor. To display tooltips in presentations, or use any advanced features,
+            you will need to use a text editor and edit the presentation.dahu file (the user-manual explains how to do
+            this).
 
-In other words, creating a presentation requires some computer-science skills. The generated presentations are already user-friendly however. They require a modern web browser (Chromium, Firefox, IE version 8 or greater, ...).
+            In other words, creating a presentation requires some computer-science skills. The generated presentations
+            are already user-friendly however. They require a modern web browser (Chromium, Firefox, IE version 8 or
+            greater, ...).
         </p>
     </div>
 </div>
+{% endblock %}
+{% block extra_body_script %}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".carousel").carousel({
+            interval: 2000
+        });
+    })
+</script>
 {% endblock %}
