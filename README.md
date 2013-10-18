@@ -21,13 +21,27 @@ The building process requires some python dependencies that can be obtained by r
 
     > pip install -r requirements.txt
 
-# Generate
+# Convention
+
+For the web page to be nicely designed we have to respect few convention.
+
+## Images
+
+Image size must respect the golden ratio.
+A common size of image is: 800 x 500.
+
+Please respect this ratio.
+
+
+# Generate & Publish
+
+## Generate
 
 For generating the web page you need to run
 
     > fab generate
 
-# Publish
+## Publish
 
 For publishing the web page you need to run
 
@@ -35,7 +49,7 @@ For publishing the web page you need to run
 
 **info** currently the publication is done on the devel-gh-pages branch.
 
-# Clean
+## Clean
 
 For cleaning the project just run
 
