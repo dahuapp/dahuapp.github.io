@@ -3,9 +3,13 @@ import re
 import time
 import shutil
 import jinja2
+import posixpath
+import urllib
 
-from fabric.api import run, execute, task, abort, warn, local
+from fabric.api import env, execute, task, abort, warn, local, settings
+from fabric.context_managers import lcd, cd
 from fabric.colors import yellow, blue, red
+
 
 SCRIPTS_JS = "js"
 STYLESHEETS_CSS = "css"
@@ -25,6 +29,41 @@ ABS_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 ABS_OUTPUT_PATH = os.path.join(ABS_ROOT_PATH, OUTPUT_DIR)
 
 SERVER_PORT = 8000
+SERVER_SUFFIXES = ['','.html','index.html']
+
+
+try:
+    import SimpleHTTPServer as srv
+except ImportError:
+    import http.server as srv
+
+try:
+    import SocketServer as socketserver
+except ImportError:
+    import socketserver
+
+
+class FabricHTTPRequestHandler(srv.SimpleHTTPRequestHandler):
+    """Adaptation of the standard srv.SimpleHTTPRequestHandler for Fabric"""
+
+    def translate_path(self, path):
+        """Translate a /-separated PATH to the local filename syntax.
+
+        Components that mean special things to the local file system
+        (e.g. drive or directory names) are ignored.  (XXX They should
+        probably be diagnosed.)
+
+        """
+        path = posixpath.normpath(urllib.unquote(path))
+        words = path.split('/')
+        words = filter(None, words)
+        path = env.cwd # here is the small trick...
+        for word in words:
+            drive, word = os.path.splitdrive(word)
+            head, word = os.path.split(word)
+            if word in (os.curdir, os.pardir): continue
+            path = os.path.join(path, word)
+        return path
 
 
 @task
@@ -52,7 +91,7 @@ def generate():
     execute(bower_install)
 
     # generate templates
-    env = jinja2.Environment(loader=jinja2.FileSystemLoader(searchpath=TEMPLATES_DIR))
+    jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(searchpath=TEMPLATES_DIR))
     for root, dirs, files in os.walk(TEMPLATES_DIR):
         for dir in dirs:
             if dir in PROTECTED_DIRS:
@@ -64,9 +103,8 @@ def generate():
             name, ext = os.path.splitext(file)
             if not name.startswith("_") and ext == ".html":
                 __print_build(root, file)
-                template = env.get_template(file)
-                file_output_dir = re.sub(r"^({})".format(TEMPLATES_DIR), OUTPUT_DIR, root)
-                with open(os.path.join(file_output_dir, file), "wb") as fh:
+                template = jinja_env.get_template(os.path.relpath(os.path.join(root, file), TEMPLATES_DIR))
+                with open(os.path.join(OUTPUT_DIR, os.path.relpath(root, TEMPLATES_DIR), file), "wb") as fh:
                     fh.write(template.render())
 
     # finally generate resources
@@ -103,7 +141,6 @@ def generate_stylesheets():
                 os.path.join(STYLESHEETS_DIR, STYLESHEETS_SCSS),
                 os.path.join(OUTPUT_DIR, STATICS_DIR, STYLESHEETS_CSS),
                 ASSETS_DIR))
-
 
 
 def generate_scripts():
@@ -148,9 +185,29 @@ def publish(from_branch="devel", to_branch="devel-gh-pages"):
     local("git push origin {0} --force".format(to_branch))
     local("git checkout {0}".format(from_branch))
 
+
+def run_server():
+    Handler = FabricHTTPRequestHandler
+
+    try:
+        httpd = socketserver.TCPServer(('', SERVER_PORT), Handler)
+    except OSError as e:
+        abort(red("Could not listen on post %s") % SERVER_PORT)
+
+    print("Serving at port %s" % SERVER_PORT)
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt as e:
+        abort("Shutting down server")
+        httpd.socket.close()
+
+
 @task
 def serve():
-    local('cd {0} && python -m SimpleHTTPServer'.format(OUTPUT_DIR))
+    with cd(os.path.join(os.getcwd(), OUTPUT_DIR)):
+        with settings(warn_only=True):
+            execute(run_server)
+
 
 # --- stupid output functions ---
 
