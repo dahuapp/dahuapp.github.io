@@ -33,21 +33,27 @@ A common size of image is: 800 x 500.
 Please respect this ratio.
 
 
-# Generate & Publish
+# Generate / Check / Publish
 
 ## Generate
 
-For generating the web page you need to run
+For generating the web site you need to run
 
     > fab generate
 
 ## Publish
 
-For publishing the web page you need to run
+For publishing the web site you need to run
 
     > fab publish
 
 **info** currently the publication is done on the devel-gh-pages branch.
+
+## Serve
+
+For watching the generated web site locally just run
+
+    > fab serve
 
 ## Clean
 

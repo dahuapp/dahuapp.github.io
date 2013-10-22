@@ -116,3 +116,9 @@ ul.nav-list {
         border-left: 1px dashed #dadada;
     }
 }
+
+/* button */
+
+a.btn span.glyphicon {
+    padding-right: $padding-base-vertical;
+}
