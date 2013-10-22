@@ -24,6 +24,8 @@ STATICS_DIR = "statics"
 ABS_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 ABS_OUTPUT_PATH = os.path.join(ABS_ROOT_PATH, OUTPUT_DIR)
 
+SERVER_PORT = 8000
+
 
 @task
 def clean():
@@ -146,6 +148,9 @@ def publish(from_branch="devel", to_branch="devel-gh-pages"):
     local("git push origin {0} --force".format(to_branch))
     local("git checkout {0}".format(from_branch))
 
+@task
+def serve():
+    local('cd {0} && python -m SimpleHTTPServer'.format(OUTPUT_DIR))
 
 # --- stupid output functions ---
 
