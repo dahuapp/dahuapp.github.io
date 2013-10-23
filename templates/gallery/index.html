@@ -1,0 +1,29 @@
+{% extends "_base.html" %}
+{% block title %}Dahu :: Gallery{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="page-header main-header">
+        <h1 class="link">Gallery</h1>
+    </div>
+    <div class="row">
+        {% for item in gallery['items'] %}
+        <div class="col-xs-12 col-md-6">
+            <div class="item">
+                <img src="{{ item.meta.screen_src.0 }}" class="img-responsive"/>
+
+                <div class="caption">
+                    <h3>{{ item.meta.title.0 }}</h3>
+
+                    <p>{{ item.html }}</p>
+
+                    <p>
+                        <a href="{{ item.meta.preview_url.0 }}" class="btn btn-primary">Screencast</a>
+                        <a href="{{ item.meta.source_url.0 }}" class="btn btn-default">Source</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
