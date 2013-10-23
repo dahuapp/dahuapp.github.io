@@ -1,0 +1,4 @@
+recursive-include assets/sass-bootstrap/dist *
+recursive-include assets/font-awesome/css *
+recursive-include assets/font-awesome/font *
+recursive-include assets/jquery *.js

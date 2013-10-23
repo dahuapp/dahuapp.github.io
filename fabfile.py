@@ -6,6 +6,7 @@ import jinja2
 import posixpath
 import urllib
 import markdown
+from distutils.filelist import FileList
 
 from fabric.api import env, execute, task, abort, warn, local, settings
 from fabric.context_managers import lcd, cd
@@ -84,10 +85,10 @@ def generate():
     execute(clean)
 
     # generate medias, stylesheets, scripts
-    execute(generate_medias)
-    execute(generate_assets)
-    execute(generate_stylesheets)
-    execute(generate_scripts)
+    execute(process_medias)
+    execute(process_assets)
+    execute(process_stylesheets)
+    execute(process_scripts)
 
     # collect bower listed dependencies
     execute(bower_install)
@@ -141,25 +142,41 @@ def generate():
     execute(generate_resources)
 
 
-def generate_assets():
-    """Generate assets"""
-
-    execute(bower_install, force=False)
-
-    if os.path.exists(ASSETS_DIR):
-        __print_copy(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR))
-        shutil.copytree(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR))
-
-
-def generate_medias():
-    """Generate medias"""
+def process_medias():
+    """Process medias"""
 
     if os.path.exists(MEDIAS_DIR):
         __print_copy(MEDIAS_DIR, os.path.join(OUTPUT_DIR, STATICS_DIR, MEDIAS_DIR))
         shutil.copytree(MEDIAS_DIR, os.path.join(OUTPUT_DIR, STATICS_DIR, MEDIAS_DIR))
 
 
-def generate_stylesheets():
+def process_assets():
+    """Process assets"""
+
+    # check bower assets
+    execute(bower_install, force=False)
+
+    if not os.path.exists('assets.in'):
+        abort(red("Please specify an assets.in file."))
+
+    # load assets filter
+    filelist = FileList()
+    with open('assets.in', "r") as fh:
+        for line in fh:
+            filelist.process_template_line(line)
+
+    # copy assets
+    if os.path.exists(ASSETS_DIR):
+        for file in filelist.files:
+            output_dir = os.path.join(OUTPUT_DIR, os.path.dirname(file))
+            if not os.path.exists(output_dir):
+                __print_create(output_dir)
+                os.makedirs(output_dir)
+            __print_copy(file, os.path.join(OUTPUT_DIR, file))
+            shutil.copyfile(file, os.path.join(OUTPUT_DIR, file))
+
+
+def process_stylesheets():
     """Generate stylesheets. Only CSS is exported."""
 
     if os.path.exists(STYLESHEETS_DIR):
@@ -173,7 +190,7 @@ def generate_stylesheets():
                 ASSETS_DIR))
 
 
-def generate_scripts():
+def process_scripts():
     """Generate scripts. Only JavaScript is exported"""
 
     if os.path.exists(os.path.join(SCRIPTS_DIR, SCRIPTS_JS)):
@@ -216,6 +233,13 @@ def publish(from_branch="devel", to_branch="devel-gh-pages"):
     local("git checkout {0}".format(from_branch))
 
 
+@task
+def serve():
+    with cd(os.path.join(os.getcwd(), OUTPUT_DIR)):
+        with settings(warn_only=True):
+            execute(run_server)
+
+
 def run_server():
     Handler = FabricHTTPRequestHandler
 
@@ -230,13 +254,6 @@ def run_server():
     except KeyboardInterrupt as e:
         abort("Shutting down server")
         httpd.socket.close()
-
-
-@task
-def serve():
-    with cd(os.path.join(os.getcwd(), OUTPUT_DIR)):
-        with settings(warn_only=True):
-            execute(run_server)
 
 
 # --- stupid output functions ---
