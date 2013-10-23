@@ -1,7 +1,27 @@
 {% extends "_base.html" %}
 {% block title %}Dahu - a free and awesome screencasting software for Windows, Mac and Linux{% endblock %}
 {% block content %}
-<div class="jumbotron jumbotron-carousel">
+
+
+<!-- headline -->
+
+
+<div id="headline" class="container">
+    <div class="jumbotron">
+        <h1>Screencasting done right!</h1>
+
+        <p class="lead">
+            Dahu is an alternative to existing screencasting softwares.
+            Dahu is based on a few ideas that simply make generating screencast more clever.
+        </p>
+    </div>
+</div>
+
+
+<!-- banner -->
+
+
+<div id="banner" class="jumbotron">
     <div class="container text-center">
         <div class="row">
             <div id="showcase" class="col-xs-12 col-md-8 col-lg-7">
@@ -13,7 +33,7 @@
                 </iframe>
                 -->
             </div>
-            <div id="feature" class="feature col-xs-12 col-md-4 col-lg-5">
+            <div class="feature col-xs-12 col-md-4 col-lg-5">
                 <div id="carousel-features" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="item active">
@@ -60,32 +80,29 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="jumbotron jumbotron-banner">
-        <h1>Screencasting done right!</h1>
 
-        <p class="lead">
-            Dahu is an alternative to existing screencasting softwares.
-            Dahu is based on a few ideas that simply make generating screencast more clever.
-        </p>
-    </div>
+
+<!-- features -->
+
+
+<div id="features" class="container">
     <div class="row">
         <div class="col-xs-12 col-md-6 col-lg-4">
-            <h2>Take screenshots as still images, not video.</h2>
+            <h2><i class="icon-picture"></i>Take screenshots as still images, not video.</h2>
 
             <p>Videos are hard to edit and hard to navigate. Badly compressed
                 videos are hardly readable. Instead, Dahu uses a succession of still
                 images, that look like a video to the user.</p>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
-            <h2>Capture mouse position.</h2>
+            <h2><i class="icon-screenshot"></i>Capture mouse position.</h2>
 
             <p>The mouse positions are captured at each step. Smooth mouse animations
                 are then generated from the starting point to the end point.
                 Mouse positions can be edited after capture.</p>
         </div>
         <div class="col-xs-12 col-md-6 col-xs-12 col-md-6 col-lg-4">
-            <h2>Annotate with tooltips, not voice.</h2>
+            <h2><i class="icon-comments-alt"></i>Annotate with tooltips, not voice.</h2>
 
             <p>Annotations on the presentation appear as textual tooltips. This
                 makes post-editing easy. The text is rendered as normal text in the
@@ -93,7 +110,7 @@
                 indexed by search engines.</p>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
-            <h2>Standard web technologies. No flash, no plugin.</h2>
+            <h2><i class="icon-html5"></i>Standard web technologies. No flash, no plugin.</h2>
 
             <p>The generated
                 animation use only standard web technologies (HTML, CSS,
@@ -103,21 +120,7 @@
                 HTML elements like links within tooltips.</p>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
-            <h2>Multi-platform.</h2>
-
-            <p>The tool itself is written in
-                Java and JavaScript. It requires a recent version of Java, but runs
-                on Windows, Linux, Mac OS, and any Java compliant systems.</p>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-4">
-            <h2>Free and Open-Source.</h2>
-
-            <p>Dahu is available for free and is fully open-source.
-                The source code is hosted on <a href="https://github.com/dahuapp/Dahu.git">Github</a>
-            </p>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-4">
-            <h2>Version-Control Friendly.</h2>
+            <h2><i class="icon-sitemap"></i>Version-Control Friendly.</h2>
 
             <p>A Dahu project
                 consists in one small text file (JSon) <span class="filename">presentation.dahu</span>,
@@ -127,10 +130,46 @@
                 <span class="filename">presentation.dahu</span> does not require storing a full version
                 of the whole project).</p>
         </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <h2><i class="icon-group"></i>Free and Open-Source.</h2>
+
+            <p>Dahu is available for free and is fully open-source.
+                The source code is hosted on <a href="https://github.com/dahuapp/Dahu.git">Github</a>
+            </p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <h2><i class="icon-desktop"></i>Multi-platform.</h2>
+
+            <p>The tool itself is written in
+                Java and JavaScript. It requires a recent version of Java, but runs
+                on Windows, Linux, Mac OS, and any Java compliant systems.</p>
+        </div>
     </div>
 </div>
+
+
+<!-- download -->
+
+
 <hr class="spacer"/>
-<div class="container">
+<div id="download" class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <a href="#" class="btn btn-primary btn-xl btn-download">
+                <i class="glyphicon glyphicon-download-alt"></i> Download Dahu
+                <em>for <i class="icon-windows"></i> Windows, <i class="icon-apple"></i> Mac OS X and <i class="icon-linux"></i> Linux</em>
+            </a>
+            <p>The source code can be downloaded from <a href="https://github.com/dahuapp/Dahu.git">GitHub</a></p>
+        </div>
+    </div>
+</div>
+
+
+<!-- gallery -->
+
+
+<hr class="spacer"/>
+<div id="gallery" class="container">
     <div class="page-header">
         <h1 class="link">
             Gallery<a href="/gallery" class="btn btn-default pull-right"><span class="glyphicon glyphicon-hand-right"></span>see more</a>
@@ -171,8 +210,13 @@
         </div>
     </div>
 </div>
+
+
+<!-- screenshots -->
+
+
 <hr class="spacer"/>
-<div class="container">
+<div id="screenshots" class="container">
     <div class="page-header">
         <h1 class="link">
             Screenshots<a href="/screenshots" class="btn btn-default pull-right"><span class="glyphicon glyphicon-hand-right"></span>see more</a>
@@ -192,29 +236,45 @@
     </div>
 </div>
 
-<hr class="divider"/>
-<div class="container">
-    <p>Binary releases of Dahu can be found on the Dahu release page.
 
-        The source code can be downloaded from GitHub. You will need Java >= 1.7 and Gradle to compile it.</p>
-</div>
+<!-- development corner -->
 
-<div class="jumbotron jumbotron-development">
-    <div class="container">
-        <h1>Development status</h1>
 
-        <p class="lead">
-            Dahu is still in early stage of development. The presentation generation works well, but not all features
-            are implemented in the graphical editor. To display tooltips in presentations, or use any advanced features,
-            you will need to use a text editor and edit the presentation.dahu file (the user-manual explains how to do
-            this).
-
-            In other words, creating a presentation requires some computer-science skills. The generated presentations
-            are already user-friendly however. They require a modern web browser (Chromium, Firefox, IE version 8 or
-            greater, ...).
-        </p>
+<hr class="spacer"/>
+<div id="more">
+    <div id="contribute" class="jumbotron">
+        <div class="container">
+            <div class="page-header main-header">
+                <h1 class="link">Development status</h1>
+            </div>
+            <p>
+                <em>Dahu is still in early stage of development.</em> Advanced features are not yet implemented in the graphical
+                editor. For advanced usage you will need to use a text editor and edit the presentation.dahu file: check
+                the <a href="https://github.com/dahuapp/Dahu/wiki/User-manual">user-manual</a> for more information.
+            </p>
+            <div class="btn-group text-center">
+                    <a href="https://twitter.com/dahuapp" class="btn btn-default" rel="publisher"><i class="icon-twitter"></i> Follow us on Twitter</a>
+                    <a href="https://github.com/dahuapp/Dahu" class="btn btn-default" rel="publisher"><i class="icon-github"></i> Follow us on Github</a>
+                    <a href="https://plus.google.com/113853478627369571129" class="btn btn-default" rel="publisher"><i class="icon-google-plus"></i> Follow us on Google+</a>
+            </div>
+        </div>
+    </div>
+    <div id="references" class="container text-center">
+        <p>Dahu uses those tools</p>
+        <ul class="list-inline">
+            <li>
+                <a href="#"><img src="statics/medias/images/logos/javafx.png" alt="JavaFx" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="statics/medias/images/logos/gradle.png" alt="Gradle" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="statics/medias/images/logos/github.png" alt="Github" /></a>
+            </li>
+        </ul>
     </div>
 </div>
+
 {% endblock %}
 {% block extra_body_script %}
 <script type="text/javascript">

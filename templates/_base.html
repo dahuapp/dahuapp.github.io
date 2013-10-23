@@ -12,8 +12,9 @@
     <meta name="description" content="{% block description %}{% endblock %}"/>
     <meta name="keywords" content="{% block keywords %}{% endblock %}"/>
 
-    <link rel="stylesheet" href="/assets/sass-bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/statics/css/style.css">
+    <link rel="stylesheet" href="/assets/sass-bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/statics/css/style.css" />
     <script type="text/javascript" src="/assets/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/sass-bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
@@ -27,7 +28,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </a>
-                <a href="index.html" class="navbar-brand">
+                <a href="/" class="navbar-brand">
                     <img src="/statics/medias/images/dahu-icon-32@2x.png"/> Dahu
                 </a>
             </div>
@@ -37,7 +38,6 @@
                     <li><a href="/gallery">Gallery</a></li>
                     <li><a href="/screenshots">Screenshots</a></li>
                     <li><a href="/download">Download</a></li>
-                    <li><a href="/contribute">Contribute</a></li>
                 </ul>
             </div>
         </div>
@@ -77,17 +77,28 @@
     -->
 </header>
 {% block content %}{% endblock %}
-<hr class="divider mark"/>
 <footer>
+    <div id="breadcrumb">
+        <ol class="breadcrumb container">
+            <li><a href="/">Home</a></li>
+            {% for part in breadcrumb %}
+            <li><a href="/{{ breadcrumb[:loop.index]|join('/')}}" {% if loop.last %}class="active"{% endif %}>{{ part }}</a></li>
+            {% endfor %}
+        </ol>
+    </div>
     <div class="container divider">
         <ul class="list-inline nav-list pull-left">
             <li><a href="/about" class="navbar-link">About</a></li>
             <li><a href="/support" class="navbar-link">Support</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="/FAQ">FAQ</a></li>
             <li><a href="https://twitter.com/dahuapp">Twitter</a></li>
-            <li><a href="https://github.com/dahuapp/Dahu.git" class="navbar-link">Github</a></li>
+            <li>
+                <a href="https://github.com/dahuapp/Dahu.git" class="navbar-link">Github</a>
+                <iframe src="http://ghbtns.com/github-btn.html?user=dahuapp&repo=Dahu&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=dahuapp&repo=Dahu&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+            </li>
         </ul>
-        <div class="pull-right">Dahu 2013</div>
+        <div class="pull-right">Dahu 2013 - Designed and built by <a href="https://github.com/barraq">@barraq</a></div>
     </div>
 </footer>
 <script type="text/javascript">

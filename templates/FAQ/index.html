@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+{% block title %}Dahu :: FAQ{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="page-header main-header">
+        <h1 class="link">FAQ</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordion">
+                {% for item in FAQ['items'] %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse{{ loop.index }}">
+                                {{ item.meta.title|join('') }}
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse{{ loop.index }}" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            {{ item.html }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_body_script %}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".collapse").collapse('hide');
+    })
+</script>
+{% endblock %}
