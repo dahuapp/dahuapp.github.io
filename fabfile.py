@@ -5,10 +5,11 @@ import shutil
 import jinja2
 import posixpath
 import urllib
+import markdown
 
 from fabric.api import env, execute, task, abort, warn, local, settings
 from fabric.context_managers import lcd, cd
-from fabric.colors import yellow, blue, red
+from fabric.colors import yellow, blue, red, green
 
 
 SCRIPTS_JS = "js"
@@ -49,12 +50,13 @@ class FabricHTTPRequestHandler(srv.SimpleHTTPRequestHandler):
     def translate_path(self, path):
         """Translate a /-separated PATH to the local filename syntax.
 
-        Components that mean special things to the local file system
+        - Components that mean special things to the local file system
         (e.g. drive or directory names) are ignored.  (XXX They should
-        probably be diagnosed.)
+        probably be diagnosed.).
 
+        - Components such as query are ignored.
         """
-        path = posixpath.normpath(urllib.unquote(path))
+        path = posixpath.normpath(urllib.splitquery(urllib.unquote(path))[0])
         words = path.split('/')
         words = filter(None, words)
         path = env.cwd # here is the small trick...
@@ -90,22 +92,50 @@ def generate():
     # collect bower listed dependencies
     execute(bower_install)
 
-    # generate templates
+    # generate pages
     jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(searchpath=TEMPLATES_DIR))
+    jinja_context = {}
+    jinja_pages = []
     for root, dirs, files in os.walk(TEMPLATES_DIR):
         for dir in dirs:
             if dir in PROTECTED_DIRS:
                 abort(red("you cannot use restricted names (i.e. {}) for naming your directories.".format(
                     ','.join(PROTECTED_DIRS))))
-            __print_create(os.path.join(OUTPUT_DIR, dir))
-            os.makedirs(os.path.join(ABS_OUTPUT_PATH, dir))
+
+            if dir.startswith('_'):
+                jinja_context[os.path.relpath(root, TEMPLATES_DIR)] = {}
+            else:
+                __print_create(os.path.join(OUTPUT_DIR, dir))
+                os.makedirs(os.path.join(ABS_OUTPUT_PATH, dir))
         for file in files:
             name, ext = os.path.splitext(file)
-            if not name.startswith("_") and ext == ".html":
-                __print_build(root, file)
-                template = jinja_env.get_template(os.path.relpath(os.path.join(root, file), TEMPLATES_DIR))
-                with open(os.path.join(OUTPUT_DIR, os.path.relpath(root, TEMPLATES_DIR), file), "wb") as fh:
-                    fh.write(template.render())
+            basename = os.path.basename(root)
+            relative_root = os.path.relpath(root, TEMPLATES_DIR)
+            if name.startswith('_'):
+                continue
+            elif basename.startswith('_'):
+                if ext == ".md":
+                    data = markdown.Markdown(extensions=['meta'])
+                    with open(os.path.join(root, file), "r") as fh:
+                        html = data.convert(fh.read())
+                        meta = data.Meta
+                        if not jinja_context[os.path.dirname(relative_root)].has_key(basename[1:]):
+                            jinja_context[os.path.dirname(relative_root)][basename[1:]] = []
+                        jinja_context[os.path.dirname(relative_root)][basename[1:]].append({
+                            'html': html,
+                            'meta': meta
+                        })
+            elif ext == ".html":
+                jinja_pages.append(os.path.join(relative_root, file))
+            else:
+                __print_ignore(os.path.join(relative_root, file))
+
+    for page in jinja_pages:
+        template = jinja_env.get_template(page)
+        with open(os.path.join(OUTPUT_DIR, page), "wb") as fh:
+            __print_build(*os.path.split(page))
+            breadcrumb = os.path.dirname(page).split(os.sep) if os.path.dirname(page) is not '.' else []
+            fh.write(template.render(breadcrumb=breadcrumb, **jinja_context))
 
     # finally generate resources
     execute(generate_resources)
@@ -226,3 +256,6 @@ def __print_remove(path):
 
 def __print_build(root, file):
     print(yellow("building ") + blue(os.path.join(root, file)))
+
+def __print_ignore(file):
+    print(green("ignoring ") + blue(file))
