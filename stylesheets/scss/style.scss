@@ -145,11 +145,11 @@ header {
 
     #references {
         padding-bottom: $jumbotron-padding;
-        padding-top: $jumbotron-padding;
         p {
             color: #9e9e9e;
             text-transform: uppercase;
             font-size: $font-size-large;
+            padding-top: $jumbotron-padding;
         }
         ul li {
             padding-left: $padding-large-vertical;
