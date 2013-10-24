@@ -1,0 +1,18 @@
+@mixin drop-shadow ($x: 0px, $y: 10px, $blur: 14px, $spread: 0, $alpha: 0.25) {
+  -webkit-box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
+  -moz-box-shadow:    $x $y $blur $spread rgba(0, 0, 0, $alpha);
+  box-shadow:         $x $y $blur $spread rgba(0, 0, 0, $alpha);
+}
+
+@mixin mac-osx-shadow() {
+    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.6), 0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.6), 0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.6), 0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+@mixin border-radius($radius: 6px) {
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
