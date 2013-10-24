@@ -1,5 +1,6 @@
 @import "sass-bootstrap/lib/bootstrap";
 @import "_variables";
+@import "_mixins";
 
 body {
     padding-top: 50px;
@@ -110,6 +111,16 @@ header {
     }
 }
 
+/* image gallery */
+
+.img-gallery {
+    .item {
+        padding-right: $grid-gutter-width;
+        padding-left: $grid-gutter-width;
+        img { @include mac-osx-shadow; }
+    }
+}
+
 /* more */
 
 #more {
@@ -170,16 +181,6 @@ footer {
     padding: $nav-link-padding;
 }
 
-/* thumbnail */
-
-.thumbnail {
-    border: 0 none;
-    box-shadow: none;
-    img { min-height:200px; height:200px; }
-    .caption {
-        @extend .text-center;
-    }
-}
 
 /* button */
 
