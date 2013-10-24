@@ -23,7 +23,7 @@ The building process requires some python dependencies that can be obtained by r
 
 # Convention
 
-For the web page to be nicely designed we have to respect few convention.
+For the web page to be nicely designed we have to respect few conventions.
 
 ## Images
 
@@ -34,6 +34,12 @@ Please respect this ratio.
 
 
 # Generate / Check / Publish
+
+To be generated and served the Dahu web page requires some dependencies.
+Those dependencies can be downloaded or updated using the following commands:
+
+    > fab bower:install
+    > fab bower:update
 
 ## Generate
 
@@ -47,7 +53,7 @@ For publishing the web site you need to run
 
     > fab publish
 
-**info** currently the publication is done on the devel-gh-pages branch.
+**info** currently the publication is performed on the *devel-gh-pages* branch.
 
 ## Serve
 
