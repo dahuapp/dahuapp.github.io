@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Dahu Presentation
+</title>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript">
+</script>
+
+<link rel="stylesheet" href="dahuapp.viewer.css">
+</head>
+
+<body>
+
+<div id="my-dahu-presentation">
+
+<div id="loading">Loading presentation...
+</div>
+
+<div class="object-list" style="display: none">
+<img src="img/bb79c9d2-2d91-4597-aec5-b7a0bff54f39.png" alt="img/bb79c9d2-2d91-4597-aec5-b7a0bff54f39.png" class="background s1-o0">
+<img src="img/bb79c9d2-2d91-4597-aec5-b7a0bff54f39.png" alt="img/bb79c9d2-2d91-4597-aec5-b7a0bff54f39.png" class="background s1-o0">
+
+<div class="tooltip s1-tip1" style="background-color: rgb(255, 255, 221); width: 300px; ">Par défaut, l'éditeur de texte est ouvert sur un fichier temporaire (.temp.py). Il est déconseillé d'écrire des programmes non-triviaux dedans, il vaut mieux s'organiser et bien nommer ses fichiers.
+</div>
+<img src="img/902a6e44-0c6c-4dca-9518-f1c9e899cc4c.png" alt="img/902a6e44-0c6c-4dca-9518-f1c9e899cc4c.png" class="background s2-o0">
+<img src="img/67f9744c-b407-4505-91af-6d7059007cdb.png" alt="img/67f9744c-b407-4505-91af-6d7059007cdb.png" class="background s3-o0">
+<img src="img/4c3873db-5803-4ad7-834c-0c086dd0137f.png" alt="img/4c3873db-5803-4ad7-834c-0c086dd0137f.png" class="background s10-o0">
+
+<div class="tooltip s10-tip1" style="background-color: rgb(255, 255, 221); width: 240px; ">Le fichier n'a pas encore de nom. On lui donnera quand on enregistrera le fichier.
+</div>
+<img src="img/668e4c20-cd66-41cb-bb62-5b11b63b1321.png" alt="img/668e4c20-cd66-41cb-bb62-5b11b63b1321.png" class="background s4-o0">
+<img src="img/29805a02-8cac-43e0-8937-0e60edc52e1f.png" alt="img/29805a02-8cac-43e0-8937-0e60edc52e1f.png" class="background s11-o0">
+<img src="img/b4c0f344-26fa-4ac8-a7a6-202feb322edb.png" alt="img/b4c0f344-26fa-4ac8-a7a6-202feb322edb.png" class="background s5-o0">
+<img src="img/0e666220-d0bf-453f-b216-c22c570ab4c3.png" alt="img/0e666220-d0bf-453f-b216-c22c570ab4c3.png" class="background s6-o0">
+<img src="img/2a8e40b8-e0a4-4774-a3a3-5acc1faf9f3d.png" alt="img/2a8e40b8-e0a4-4774-a3a3-5acc1faf9f3d.png" class="background s7-o0">
+
+<div class="tooltip s7-tip1" style="background-color: rgb(255, 255, 221); width: 240px; ">Le fichier s'appelle maintenant <tt>bonjour.py</tt> (l'extension <tt>.py</tt> est la convention pour les fichiers Python). On peut travailler et l'enregistrer normalement.
+</div>
+<img src="img/a6b4d2c2-3e63-4ad4-a767-2295e818a433.png" alt="img/a6b4d2c2-3e63-4ad4-a767-2295e818a433.png" class="background s8-o0">
+
+<div class="tooltip s12-tip1" style="background-color: rgb(255, 221, 221); width: 240px; ">Fin de la présentation.
+<br><a href="..">Revenir au sommaire</a>
+</div>
+<img src="img/cursor.png" alt="img/cursor.png" class="mouse-cursor">
+</div>
+
+<div class="control" style="top: 616px; ">
+<button class="previous">Previous
+</button>
+<button class="next">Next
+</button>
+</div>
+</div>
+<script src="dahuapp.js" type="text/javascript">
+</script>
+<script src="dahuapp.viewer.js" type="text/javascript">
+</script>
+<script type="text/javascript">(function($) {
+    var myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
+    myPresentation.load("presentation.json");
+    myPresentation.start();
+})(jQuery);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+{
+    "metaData": {
+        "imageWidth": 800,
+        "imageHeight": 600,
+        "nextUniqueId": 33
+    },
+    "data": [
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s1-o0",
+                    "img": "img/f19604e3-4f6f-4056-9a17-26d895885dd6.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.3675,
+                    "finalOrd": 0.37833333333333335,
+                    "speed": 0.8,
+                    "id": "0"
+                },
+                {
+                    "type": "appear",
+                    "target": "s1-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s2-o0",
+                    "img": "img/83604734-01f3-4514-bdab-ca8c2fc8e38b.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.07625,
+                    "finalOrd": 0.02,
+                    "speed": 0.8,
+                    "id": "2"
+                },
+                {
+                    "type": "appear",
+                    "target": "s2-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s3-o0",
+                    "img": "img/9ae34d9e-ac98-46aa-aa73-f6e6277417a8.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.135,
+                    "finalOrd": 0.36666666666666664,
+                    "speed": 0.8,
+                    "id": "5"
+                },
+                {
+                    "type": "appear",
+                    "target": "s3-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "6"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s4-o0",
+                    "img": "img/87b1b49d-f440-4e8c-906f-677f4801df2a.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.35125,
+                    "finalOrd": 0.8016666666666666,
+                    "speed": 0.8,
+                    "id": "8"
+                },
+                {
+                    "type": "appear",
+                    "target": "s4-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "9"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s5-o0",
+                    "img": "img/d48612d8-0a67-41c5-a033-d87198df24f1.png"
+                },
+                {
+                    "type": "background",
+                    "id": "s6-o0",
+                    "img": "img/9d843db9-c068-48f2-9353-d4925172f0b7.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s5-o0",
+                    "trigger": "onClick",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+		    "delayAfter": 500,
+                    "id": "10"
+                },
+                {
+                    "type": "appear",
+                    "target": "s6-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+		    "delayAfter": 800,
+                    "id": "12"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "tooltip",
+                    "id": "s5-tip3",
+                    "text": "Ceci est la fenêtre de l'interpréteur Python. On peut entrer du code Python, il est évalué au fur et à mesure.<br /><button class=\"next\">Continuer</button>",
+                    "color": "#FFFFDD",
+                    "width": "200px"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s5-tip2",
+                    "text": "Ceci est l'inspecteur d'objet. Cette fenêtre permet d'afficher rapidement des informations et de la documentation sur les variables.<br>(<a href=\"../inspecteur/\">voir la présentation sur l'inspecteur</a>)",
+                    "color": "#FFFFDD",
+                    "width": "250px"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s5-tip1",
+                    "text": "Voici l'éditeur de texte. On pourra y entrer des programmes, et les sauvegarder dans des fichiers.<br>(<a href=\"../editeur/\">voir la présentation sur l'éditeur</a>)",
+                    "color": "#FFFFDD",
+                    "width": "200px"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s5-tip1",
+                    "trigger": "afterPrevious",
+		    "delayAfter": 0,
+                    "abs": 0.05,
+                    "ord": 0.45,
+                    "duration": 200,
+                    "id": "14"
+                },
+                {
+                    "type": "appear",
+                    "target": "s5-tip2",
+                    "trigger": "afterPrevious",
+		    "delayAfter": 0,
+                    "abs": 0.6,
+                    "ord": 0.3,
+                    "duration": 200,
+                    "id": "15"
+                },
+                {
+                    "type": "appear",
+                    "target": "s5-tip3",
+                    "trigger": "afterPrevious",
+		    "delayAfter": 0,
+                    "abs": 0.63,
+                    "ord": 0.7,
+                    "duration": 200,
+                    "id": "16"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s7-o0",
+                    "img": "img/6026e132-583b-4460-ae2f-5c5f43499ce2.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.67125,
+                    "finalOrd": 0.14666666666666667,
+                    "speed": 0.8,
+                    "id": "17"
+                },
+                {
+                    "type": "appear",
+                    "target": "s7-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "18"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s8-o0",
+                    "img": "img/73a34299-a9d9-4b7d-8f6d-3f5246945080.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.67125,
+                    "finalOrd": 0.14666666666666667,
+                    "speed": 0.8,
+                    "id": "19"
+                },
+                {
+                    "type": "appear",
+                    "target": "s8-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "20"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s9-o0",
+                    "img": "img/78820b0c-3da7-4d62-bb78-d4fee9e2df18.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.0725,
+                    "finalOrd": 0.34833333333333333,
+                    "speed": 0.8,
+                    "id": "21"
+                },
+                {
+                    "type": "appear",
+                    "target": "s9-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+		    "delayAfter": 500,
+                    "id": "22"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s10-o0",
+                    "img": "img/5a7405f7-1147-4fed-987c-309089ea0e72.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.0725,
+                    "finalOrd": 0.34833333333333333,
+                    "speed": 0.8,
+                    "id": "24"
+                },
+                {
+                    "type": "appear",
+                    "target": "s10-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "25"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s11-o0",
+                    "img": "img/7033703a-062d-4913-836f-2866a82a8cfa.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.0725,
+                    "finalOrd": 0.34833333333333333,
+                    "speed": 0.8,
+                    "id": "26"
+                },
+                {
+                    "type": "appear",
+                    "target": "s11-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "27"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s12-o0",
+                    "img": "img/48b5e548-5fa7-4ce0-97c6-576c49623085.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.0725,
+                    "finalOrd": 0.34833333333333333,
+                    "duration": 500,
+                    "id": "28"
+                },
+                {
+                    "type": "appear",
+                    "target": "s12-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "29"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s13-o0",
+                    "img": "img/121a1323-2e09-43f4-aeef-fe4565b158f4.png"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s12-tip1",
+                    "text": "Fin de la présentation.<br /><a href=\"..\">Revenir au sommaire</a>",
+                    "color": "#FFDDDD",
+                    "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.0725,
+                    "finalOrd": 0.34833333333333333,
+                    "speed": 0.8,
+                    "id": "30"
+                },
+                {
+                    "type": "appear",
+                    "target": "s13-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "31"
+                },
+                {
+                    "type": "appear",
+                    "target": "s12-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.4,
+                    "ord": 0.45,
+                    "duration": 400,
+                    "id": "32"
+                }
+            ]
+        }
+    ]
+}

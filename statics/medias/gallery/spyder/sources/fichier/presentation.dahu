@@ -1,0 +1,403 @@
+{
+    "metaData": {
+        "imageWidth": 800,
+        "imageHeight": 600,
+        "nextUniqueId": 23
+    },
+    "data": [
+        {
+            "object": [
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.19,
+                    "finalOrd": 0.4633333333333333,
+                    "duration": 500,
+                    "id": "0"
+                },
+                {
+                    "type": "appear",
+                    "target": "s1-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s1-o0",
+                    "img": "img/bb79c9d2-2d91-4597-aec5-b7a0bff54f39.png"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s1-tip1",
+                    "text": "Par défaut, l'éditeur de texte est ouvert sur un fichier temporaire (.temp.py). Il est déconseillé d'écrire des programmes non-triviaux dedans, il vaut mieux s'organiser et bien nommer ses fichiers.",
+                    "color": "#FFFFDD",
+                    "width": "300px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.11,
+                    "finalOrd": 0.26,
+                    "duration": 500,
+                    "id": "2"
+                },
+                {
+                    "type": "appear",
+                    "target": "s1-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.1,
+                    "ord": 0.3,
+                    "speed": 0.8,
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s2-o0",
+                    "img": "img/902a6e44-0c6c-4dca-9518-f1c9e899cc4c.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.0375,
+                    "finalOrd": 0.09666666666666666,
+                    "duration": 500,
+                    "id": "4"
+                },
+                {
+                    "type": "appear",
+                    "target": "s2-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s3-o0",
+                    "img": "img/67f9744c-b407-4505-91af-6d7059007cdb.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.0375,
+                    "finalOrd": 0.13166666666666665,
+                    "duration": 150,
+                    "id": "6"
+                },
+                {
+                    "type": "appear",
+                    "target": "s3-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "7"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s10-o0",
+                    "img": "img/4c3873db-5803-4ad7-834c-0c086dd0137f.png"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s10-tip1",
+                    "text": "Le fichier n'a pas encore de nom. On lui donnera quand on enregistrera le fichier.",
+                    "color": "#FFFFDD",
+                    "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s10-o0",
+                    "trigger": "onClick",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "8"
+                },
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.13,
+                    "finalOrd": 0.26166666666666666,
+                    "speed": 0.8,
+                    "id": "9"
+                },
+                {
+                    "type": "appear",
+                    "target": "s10-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.15,
+                    "ord": 0.28,
+                    "id": "10"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s4-o0",
+                    "img": "img/668e4c20-cd66-41cb-bb62-5b11b63b1321.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "onClick",
+                    "finalAbs": 0.12625,
+                    "finalOrd": 0.16,
+                    "duration": 500,
+                    "id": "11"
+                },
+                {
+                    "type": "appear",
+                    "target": "s4-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "12"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s11-o0",
+                    "img": "img/29805a02-8cac-43e0-8937-0e60edc52e1f.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s11-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "13"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s5-o0",
+                    "img": "img/b4c0f344-26fa-4ac8-a7a6-202feb322edb.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.415,
+                    "finalOrd": 0.375,
+                    "duration": 500,
+                    "id": "14"
+                },
+                {
+                    "type": "appear",
+                    "target": "s5-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "15"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s6-o0",
+                    "img": "img/0e666220-d0bf-453f-b216-c22c570ab4c3.png"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.74,
+                    "finalOrd": 0.54,
+                    "duration": 500,
+                    "id": "16"
+                },
+                {
+                    "type": "appear",
+                    "target": "s6-o0",
+                    "trigger": "afterPrevious",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "17"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s7-o0",
+                    "img": "img/2a8e40b8-e0a4-4774-a3a3-5acc1faf9f3d.png"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s7-tip1",
+                    "text": "Le fichier s'appelle maintenant <tt>bonjour.py</tt> (l'extension <tt>.py</tt> est la convention pour les fichiers Python). On peut travailler et l'enregistrer normalement.",
+                    "color": "#FFFFDD",
+                    "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s7-o0",
+                    "trigger": "onClick",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "id": "18"
+                },
+                {
+                    "type": "appear",
+                    "target": "s7-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.2,
+                    "ord": 0.45,
+                    "duration": 0,
+                    "id": "19"
+                },
+                {
+                    "type": "move",
+                    "target": "mouse-cursor",
+                    "trigger": "afterPrevious",
+                    "finalAbs": 0.24875,
+                    "finalOrd": 0.3983333333333333,
+                    "duration": 500,
+                    "id": "20"
+                }
+            ]
+        },
+        {
+            "object": [
+                {
+                    "type": "background",
+                    "id": "s8-o0",
+                    "img": "img/a6b4d2c2-3e63-4ad4-a767-2295e818a433.png"
+                },
+                {
+                    "type": "tooltip",
+                    "id": "s12-tip1",
+                    "text": "Fin de la présentation.<br /><a href=\"..\">Revenir au sommaire</a>",
+                    "color": "#FFDDDD",
+                    "width": "240px"
+                },
+                {
+                    "type": "mouse",
+                    "id": "mouse-cursor"
+                }
+            ],
+            "action": [
+                {
+                    "type": "appear",
+                    "target": "s8-o0",
+                    "trigger": "onClick",
+                    "abs": 0,
+                    "ord": 0,
+                    "duration": 0,
+                    "delayAfter": 500,
+                    "id": "21"
+                },
+                {
+                    "type": "appear",
+                    "target": "s12-tip1",
+                    "trigger": "afterPrevious",
+                    "abs": 0.4,
+                    "ord": 0.45,
+                    "id": "22"
+                }
+            ]
+        }
+    ]
+}

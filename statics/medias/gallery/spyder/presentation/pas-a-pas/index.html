@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Dahu Presentation
+</title>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript">
+</script>
+
+<link rel="stylesheet" href="dahuapp.viewer.css">
+</head>
+
+<body>
+
+<div id="my-dahu-presentation">
+
+<div id="loading">Loading presentation...
+</div>
+
+<div class="object-list" style="display: none">
+<img src="img/cf15a938-470e-4923-b1b2-a6cc0cb322f9.png" alt="img/cf15a938-470e-4923-b1b2-a6cc0cb322f9.png" class="background s1-o0">
+<img src="img/2fc84295-da3c-4240-90a7-77a430ff6d0f.png" alt="img/2fc84295-da3c-4240-90a7-77a430ff6d0f.png" class="background s2-o0">
+<img src="img/af6a3bdf-a486-4f85-b102-80ffeb0a206d.png" alt="img/af6a3bdf-a486-4f85-b102-80ffeb0a206d.png" class="background s3-o0">
+<img src="img/0b4835a9-38c6-45f0-9018-ad09f462159f.png" alt="img/0b4835a9-38c6-45f0-9018-ad09f462159f.png" class="background s4-o0">
+<img src="img/901187a1-6c96-43ad-b774-939657d9453c.png" alt="img/901187a1-6c96-43ad-b774-939657d9453c.png" class="background s5-o0">
+<img src="img/c6a32a56-ec29-47b7-90b9-3cd3ce3e4962.png" alt="img/c6a32a56-ec29-47b7-90b9-3cd3ce3e4962.png" class="background s6-o0">
+<img src="img/f70c4546-1f84-4e4c-92db-c4c611132dc5.png" alt="img/f70c4546-1f84-4e4c-92db-c4c611132dc5.png" class="background s7-o0">
+<img src="img/3aae408b-e061-4682-afd1-f876d766f246.png" alt="img/3aae408b-e061-4682-afd1-f876d766f246.png" class="background s16-o0">
+<img src="img/aef411d3-48ba-4619-8b49-07196611efc0.png" alt="img/aef411d3-48ba-4619-8b49-07196611efc0.png" class="background s17-o0">
+<img src="img/7b2e6b18-c5c2-4e40-bf80-a72a8087c34e.png" alt="img/7b2e6b18-c5c2-4e40-bf80-a72a8087c34e.png" class="background s18-o0">
+<img src="img/3f7e4eba-24c5-441b-9eb1-d0c26fddc570.png" alt="img/3f7e4eba-24c5-441b-9eb1-d0c26fddc570.png" class="background s19-o0">
+
+<div class="tooltip s18-tip1" style="background-color: rgb(255, 255, 221); width: 200px; ">Le texte sélectionné est entré dans l'interprète, comme si on l'avait copié-collé. On voit le code exécuté et le résultat
+</div>
+<img src="img/be3423f4-9691-45f9-b0be-e81d6d7d89ee.png" alt="img/be3423f4-9691-45f9-b0be-e81d6d7d89ee.png" class="background s20-o0">
+<img src="img/8207a7e1-9427-4ebe-90d6-670191a76a34.png" alt="img/8207a7e1-9427-4ebe-90d6-670191a76a34.png" class="background s21-o0">
+<img src="img/5cca65f6-4bbc-4315-9c7a-292e9d3090db.png" alt="img/5cca65f6-4bbc-4315-9c7a-292e9d3090db.png" class="background s22-o0">
+<img src="img/68fc8f0d-2ea1-4b70-81b0-6890e648f8d9.png" alt="img/68fc8f0d-2ea1-4b70-81b0-6890e648f8d9.png" class="background s23-o0">
+<img src="img/23cae027-bedd-4f6f-be45-64a513410a98.png" alt="img/23cae027-bedd-4f6f-be45-64a513410a98.png" class="background s24-o0">
+
+<div class="tooltip s12-tip1" style="background-color: rgb(255, 221, 221); width: 240px; ">Fin de la présentation.
+<br><a href="..">Revenir au sommaire</a>
+</div>
+<img src="img/cursor.png" alt="img/cursor.png" class="mouse-cursor">
+</div>
+
+<div class="control" style="top: 616px; ">
+<button class="previous">Previous
+</button>
+<button class="next">Next
+</button>
+</div>
+</div>
+<script src="dahuapp.js" type="text/javascript">
+</script>
+<script src="dahuapp.viewer.js" type="text/javascript">
+</script>
+<script type="text/javascript">(function($) {
+    var myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
+    myPresentation.load("presentation.json");
+    myPresentation.start();
+})(jQuery);
+
+</script>
+</body>
+</html>

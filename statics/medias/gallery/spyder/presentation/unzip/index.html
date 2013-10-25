@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Dahu Presentation
+</title>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript">
+</script>
+
+<link rel="stylesheet" href="dahuapp.viewer.css">
+</head>
+
+<body>
+
+<div id="my-dahu-presentation">
+
+<div id="loading">Loading presentation...
+</div>
+
+<div class="object-list" style="display: none">
+<img src="img/bba5b602-5eb9-4653-a682-70431bd8cb18.png" alt="img/bba5b602-5eb9-4653-a682-70431bd8cb18.png" class="background s1-o0">
+<img src="img/36543bcf-cd1d-498d-b1ce-75c4638b6ff8.png" alt="img/36543bcf-cd1d-498d-b1ce-75c4638b6ff8.png" class="background s2-o0">
+<img src="img/764b2bf3-a5cc-4d60-8a1a-bed90cdc9ad6.png" alt="img/764b2bf3-a5cc-4d60-8a1a-bed90cdc9ad6.png" class="background s3-o0">
+<img src="img/1ddd7dfa-5385-49fe-af25-3981b3247d3b.png" alt="img/1ddd7dfa-5385-49fe-af25-3981b3247d3b.png" class="background s4-o0">
+<img src="img/87b4415e-b32b-4eea-a4d5-786273e1df23.png" alt="img/87b4415e-b32b-4eea-a4d5-786273e1df23.png" class="background s5-o0">
+<img src="img/e286466b-450f-4182-ad72-da3bd74ac8c0.png" alt="img/e286466b-450f-4182-ad72-da3bd74ac8c0.png" class="background s6-o0">
+<img src="img/8918b3b8-baea-4a6f-96f1-839d01619803.png" alt="img/8918b3b8-baea-4a6f-96f1-839d01619803.png" class="background s7-o0">
+<img src="img/ef1ec3b9-39bc-4478-ab13-2db5e8ab29b1.png" alt="img/ef1ec3b9-39bc-4478-ab13-2db5e8ab29b1.png" class="background s8-o0">
+<img src="img/bf38f09e-7258-4251-9f7f-3e467762f882.png" alt="img/bf38f09e-7258-4251-9f7f-3e467762f882.png" class="background s9-o0">
+<img src="img/05d5a22f-3e12-4c18-9169-d1237113a761.png" alt="img/05d5a22f-3e12-4c18-9169-d1237113a761.png" class="background s10-o0">
+
+<div class="tooltip s12-tip1" style="background-color: rgb(255, 221, 221); width: 240px; ">Fin de la présentation.
+<br><a href="..">Revenir au sommaire</a>
+</div>
+<img src="img/cursor.png" alt="img/cursor.png" class="mouse-cursor">
+</div>
+
+<div class="control" style="top: 616px; ">
+<button class="previous">Previous
+</button>
+<button class="next">Next
+</button>
+</div>
+</div>
+<script src="dahuapp.js" type="text/javascript">
+</script>
+<script src="dahuapp.viewer.js" type="text/javascript">
+</script>
+<script type="text/javascript">(function($) {
+    var myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
+    myPresentation.load("presentation.json");
+    myPresentation.start();
+})(jQuery);
+
+</script>
+</body>
+</html>

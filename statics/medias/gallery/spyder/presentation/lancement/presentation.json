@@ -1,0 +1,251 @@
+{
+    "metaData": {
+        "imageWidth": 800,
+        "imageHeight": 600,
+        "initialBackgroundId": "s1-o0",
+        "initialMouseX": 0.3675,
+        "initialMouseY": 0.37833333333333335
+    },
+    "action": [
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.07625,
+            "finalOrd": 0.02,
+            "speed": 0.8,
+            "id": "2"
+        },
+        {
+            "type": "appear",
+            "target": "s2-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "3"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.135,
+            "finalOrd": 0.36666666666666664,
+            "speed": 0.8,
+            "id": "5"
+        },
+        {
+            "type": "appear",
+            "target": "s3-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "6"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.35125,
+            "finalOrd": 0.8016666666666666,
+            "speed": 0.8,
+            "id": "8"
+        },
+        {
+            "type": "appear",
+            "target": "s4-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "9"
+        },
+        {
+            "type": "appear",
+            "target": "s5-o0",
+            "trigger": "onClick",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "delayAfter": 500,
+            "id": "10"
+        },
+        {
+            "type": "appear",
+            "target": "s6-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "delayAfter": 800,
+            "id": "12"
+        },
+        {
+            "type": "appear",
+            "target": "s5-tip1",
+            "trigger": "afterPrevious",
+            "delayAfter": 0,
+            "abs": 0.05,
+            "ord": 0.45,
+            "duration": 200,
+            "id": "14"
+        },
+        {
+            "type": "appear",
+            "target": "s5-tip2",
+            "trigger": "afterPrevious",
+            "delayAfter": 0,
+            "abs": 0.6,
+            "ord": 0.3,
+            "duration": 200,
+            "id": "15"
+        },
+        {
+            "type": "appear",
+            "target": "s5-tip3",
+            "trigger": "afterPrevious",
+            "delayAfter": 0,
+            "abs": 0.63,
+            "ord": 0.7,
+            "duration": 200,
+            "id": "16"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.67125,
+            "finalOrd": 0.14666666666666667,
+            "speed": 0.8,
+            "id": "17"
+        },
+        {
+            "type": "appear",
+            "target": "s7-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "18"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.67125,
+            "finalOrd": 0.14666666666666667,
+            "speed": 0.8,
+            "id": "19"
+        },
+        {
+            "type": "appear",
+            "target": "s8-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "20"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.0725,
+            "finalOrd": 0.34833333333333333,
+            "speed": 0.8,
+            "id": "21"
+        },
+        {
+            "type": "appear",
+            "target": "s9-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "delayAfter": 500,
+            "id": "22"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.0725,
+            "finalOrd": 0.34833333333333333,
+            "speed": 0.8,
+            "id": "24"
+        },
+        {
+            "type": "appear",
+            "target": "s10-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "25"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.0725,
+            "finalOrd": 0.34833333333333333,
+            "speed": 0.8,
+            "id": "26"
+        },
+        {
+            "type": "appear",
+            "target": "s11-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "27"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.0725,
+            "finalOrd": 0.34833333333333333,
+            "duration": 500,
+            "id": "28"
+        },
+        {
+            "type": "appear",
+            "target": "s12-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "29"
+        },
+        {
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.0725,
+            "finalOrd": 0.34833333333333333,
+            "speed": 0.8,
+            "id": "30"
+        },
+        {
+            "type": "appear",
+            "target": "s13-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0,
+            "id": "31"
+        },
+        {
+            "type": "appear",
+            "target": "s12-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.4,
+            "ord": 0.45,
+            "duration": 400,
+            "id": "32"
+        }
+    ]
+}
