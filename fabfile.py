@@ -154,7 +154,7 @@ def bower(action, force=True):
 
 
 @task
-def publish(from_branch="devel", to_branch="devel-gh-pages"):
+def publish(from_branch="devel", to_branch="master"):
     local("git branch -D {0}".format(to_branch))
     local("git checkout --orphan {0}".format(to_branch))
     local("git rm --cached $(git ls-files)")
