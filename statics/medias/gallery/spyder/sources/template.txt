@@ -1,0 +1,16 @@
+%(head_prefix)s
+%(head)s
+%(stylesheet)s
+%(body_prefix)s
+<a class="invisible" href="http://ensimag.grenoble-inp.fr/"><img class="linkimg" src="ensimag.png" class="topleft" width="203px" /></a>
+%(body_pre_docinfo)s
+%(docinfo)s
+%(body)s
+  <div class="bottom">
+    <div class="address">
+      <address><a href="mailto:matthieu.moy@imag.fr">Matthieu MOY</a></address>
+    </div>
+    <a href="/~moy">Retour à la page d'accueil</a><br/>
+    <br/><br/>
+  </div>
+%(body_suffix)s

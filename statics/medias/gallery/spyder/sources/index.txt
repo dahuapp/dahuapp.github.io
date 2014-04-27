@@ -1,0 +1,18 @@
+Présentations sur l'IDE Python Spyder
+=====================================
+
+Premiers pas
+------------
+
+* `Lancement de Spyder, premiers pas dans l'interpréteur Python <lancement>`__
+
+* `Utilisation de l'inspecteur d'objets <inspecteur>`__
+
+* `Utilisation de l'éditeur de texte <editeur>`__
+
+* `Nommer ses fichiers <fichier>`__
+
+A propos des présentations
+--------------------------
+
+Ces présentations ont été réalisées avec l'outil `Dahu <https://github.com/dahuapp/Dahu>`__.

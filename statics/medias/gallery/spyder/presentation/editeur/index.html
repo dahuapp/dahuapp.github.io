@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Dahu Presentation
+</title>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript">
+</script>
+
+<link rel="stylesheet" href="dahuapp.viewer.css">
+</head>
+
+<body>
+
+<div id="my-dahu-presentation">
+
+<div id="loading">Loading presentation...
+</div>
+
+<div class="object-list" style="display: none">
+<img src="img/e734e676-dd9d-44ff-b6e0-8328fffb7a7e.png" alt="img/e734e676-dd9d-44ff-b6e0-8328fffb7a7e.png" class="background s1-o0">
+<img src="img/35db6e4c-53f4-4468-a05f-717743c3dc04.png" alt="img/35db6e4c-53f4-4468-a05f-717743c3dc04.png" class="background s2-o0">
+<img src="img/8dbcda04-4c8e-454c-8059-735d029102a0.png" alt="img/8dbcda04-4c8e-454c-8059-735d029102a0.png" class="background s3-o0">
+
+<div class="tooltip s3-tip1" style="background-color: rgb(255, 255, 221); width: 240px; ">Le texte qu'on a entré est dans la mémoire de l'ordinateur, mais pas sur le disque (la petite étoile derrière le nom du fichier en haut de l'éditeur montre que le fichier n'est pas enregistré). On peut enregistrer le fichier avec ce bouton.
+</div>
+<img src="img/16afc8ca-1529-4821-a6ba-1126b1b098f8.png" alt="img/16afc8ca-1529-4821-a6ba-1126b1b098f8.png" class="background s4-o0">
+<img src="img/f423d636-4e15-44ce-ac21-305d54f64cd5.png" alt="img/f423d636-4e15-44ce-ac21-305d54f64cd5.png" class="background s5-o0">
+
+<div class="tooltip s5-tip1" style="background-color: rgb(255, 255, 221); width: 240px; ">Ce bouton enregistre le programme, puis l'exécute dans l'interpréteur.
+</div>
+<img src="img/ed41dcad-70e4-4b31-abb7-c2ec1319d1a9.png" alt="img/ed41dcad-70e4-4b31-abb7-c2ec1319d1a9.png" class="background s6-o0">
+<img src="img/90f27653-aa32-4fe4-ad97-69e81893f158.png" alt="img/90f27653-aa32-4fe4-ad97-69e81893f158.png" class="background s7-o0">
+<img src="img/e4d38f1b-9360-46c4-803c-3e04213e5e62.png" alt="img/e4d38f1b-9360-46c4-803c-3e04213e5e62.png" class="background s8-o0">
+
+<div class="tooltip s8-tip1" style="background-color: rgb(255, 255, 221); width: 400px; ">Le programme a bien été exécuté. Le résultat est visible dans la fenêtre de l'interpréteur.
+</div>
+<img src="img/1627339c-70e4-46ae-823c-8280aebd684c.png" alt="img/1627339c-70e4-46ae-823c-8280aebd684c.png" class="background s9-o0">
+
+<div class="tooltip s9-tip1" style="background-color: rgb(255, 255, 221); width: 400px; ">On peut bien sûr entrer des programmes plus longs, sur plusieurs lignes. Contrairement au code entré directement dans l'interpréteur, rien n'est exécuté tant qu'on n'a pas cliqué sur «&nbsp;Exécuter le fichier&nbsp;».
+</div>
+<img src="img/65c7a710-46a8-4a3f-979f-47cd933fa633.png" alt="img/65c7a710-46a8-4a3f-979f-47cd933fa633.png" class="background s10-o0">
+<img src="img/57af7d64-5d12-4020-9663-6c38b45026c1.png" alt="img/57af7d64-5d12-4020-9663-6c38b45026c1.png" class="background s11-o0">
+
+<div class="tooltip s11-tip1" style="background-color: rgb(255, 255, 221); width: 240px; ">Spyder se souvient des paramètre entrés lors de la première exécution, et ne pose plus de questions.
+</div>
+<img src="img/26e67c6e-a9a0-46a7-b504-7e960ed62554.png" alt="img/26e67c6e-a9a0-46a7-b504-7e960ed62554.png" class="background s12-o0">
+
+<div class="tooltip s12-tip1" style="background-color: rgb(255, 221, 221); width: 240px; ">Fin de la présentation.
+<br><a href="..">Revenir au sommaire</a>
+</div>
+<img src="img/cursor.png" alt="img/cursor.png" class="mouse-cursor">
+</div>
+
+<div class="control" style="top: 616px; ">
+<button class="previous">Previous
+</button>
+<button class="next">Next
+</button>
+</div>
+</div>
+<script src="dahuapp.js" type="text/javascript">
+</script>
+<script src="dahuapp.viewer.js" type="text/javascript">
+</script>
+<script type="text/javascript">(function($) {
+    var myPresentation = dahuapp.viewer.createDahuViewer("#my-dahu-presentation");
+    myPresentation.load("presentation.json");
+    myPresentation.start();
+})(jQuery);
+
+</script>
+</body>
+</html>

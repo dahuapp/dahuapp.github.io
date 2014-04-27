@@ -1,0 +1,206 @@
+{
+    "metaData": {
+        "imageWidth": 600,
+        "imageHeight": 600,
+        "initialBackgroundId": "s1-o0",
+        "initialMouseX": 0.6416666666666667,
+        "initialMouseY": 0.65
+    },
+    "action": [
+        {
+            "type": "appear",
+            "target": "s1-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.4,
+            "ord": 0.45,
+            "duration": 400,
+            "id": "32"
+        },
+        {
+            "type": "delay",
+            "trigger": "afterPrevious",
+            "duration": 8000
+        },
+        {
+            "id": "3",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.30333333333333334,
+            "finalOrd": 0.145
+        },
+        {
+            "id": "4",
+            "type": "appear",
+            "target": "s2-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "5",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.30333333333333334,
+            "finalOrd": 0.2966666666666667
+        },
+        {
+            "id": "6",
+            "type": "appear",
+            "target": "s3-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "7",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.30333333333333334,
+            "finalOrd": 0.2966666666666667
+        },
+        {
+            "id": "8",
+            "type": "appear",
+            "target": "s4-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "9",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.45666666666666667,
+            "finalOrd": 0.14166666666666666
+        },
+        {
+            "id": "10",
+            "type": "appear",
+            "target": "s5-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "11",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.43833333333333335,
+            "finalOrd": 0.24833333333333332
+        },
+        {
+            "id": "12",
+            "type": "appear",
+            "target": "s6-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "13",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.43833333333333335,
+            "finalOrd": 0.24833333333333332
+        },
+        {
+            "id": "14",
+            "type": "appear",
+            "target": "s7-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "15",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.45,
+            "finalOrd": 0.14166666666666666
+        },
+        {
+            "id": "16",
+            "type": "appear",
+            "target": "s8-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "19",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "afterPrevious",
+            "finalAbs": 0.455,
+            "finalOrd": 0.2966666666666667
+        },
+        {
+            "id": "20",
+            "type": "appear",
+            "target": "s10-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "26",
+            "type": "appear",
+            "target": "s12b-o0",
+            "trigger": "afterPrevious",
+            "delayAfter": 1000,
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "22",
+            "type": "appear",
+            "target": "s11-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "id": "23",
+            "type": "move",
+            "target": "mouse-cursor",
+            "trigger": "onClick",
+            "finalAbs": 0.195,
+            "finalOrd": 0.8983333333333333
+        },
+        {
+            "id": "24",
+            "type": "appear",
+            "target": "s12-o0",
+            "trigger": "afterPrevious",
+            "abs": 0,
+            "ord": 0,
+            "duration": 0
+        },
+        {
+            "type": "appear",
+            "target": "s12-tip1",
+            "trigger": "afterPrevious",
+            "abs": 0.4,
+            "ord": 0.45,
+            "duration": 400,
+            "id": "32"
+        }
+    ]
+}
